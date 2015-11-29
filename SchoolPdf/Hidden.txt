@@ -1,0 +1,77 @@
+﻿<!--
+<form name="form2">
+    La Commission scolaire de langue fran&ccedil;aise: <select name="flsb" onChange="MM_jumpMenu('parent',this,0)">
+    <option selected="selected" value="../eecd/assessments/Ecole Evangeline 2012_2014_CSLF_English.pdf">&Eacute;cole &Eacute;vang&eacute;line - English</option>
+    <option value="../eecd/assessments/Ecole Evangeline 2012_2014_CSLF_French.pdf">&Eacute;cole &Eacute;vang&eacute;line - French</option>
+    <option value="../eecd/assessments/Ecole Francois-Buote 2012_2014_CSLF_English.pdf">&Eacute;cole Fran&ccedil;ois-Buote - English</option>
+    <option value="../eecd/assessments/Ecole Francois-Buote 2012_2014_CSLF_French.pdf">&Eacute;cole Fran&ccedil;ois-Buote - French</option>
+    <option value="../eecd/assessments/Ecole La-Belle-Cloche 2012_2014_CSLF_English.pdf">&Eacute;cole La-Belle-Cloche - English</option>
+    <option value="../eecd/assessments/Ecole La-Belle-Cloche 2012_2014_CSLF_French.pdf">&Eacute;cole La-Belle-Cloche - French</option>
+    <option value="../eecd/assessments/Ecole Pierre-Chiasson 2012_2014_CSLF_English.pdf">&Eacute;cole Pierre-Chiasson - English</option>
+    <option value="../eecd/assessments/Ecole Pierre-Chiasson 2012_2014_CSLF_French.pdf">&Eacute;cole Pierre-Chiasson - French</option>
+    <option value="../eecd/assessments/Ecole St-Augustine 2012_2014_CSLF_English.pdf">&Eacute;cole St-Augustine - English</option>
+    <option value="../eecd/assessments/Ecole St-Augustine 2012_2014_CSLF_French.pdf">&Eacute;cole St-Augustine - French</option>
+    <option value="../eecd/assessments/Ecole-sur-Mer 2012_2014_CSLF_English.pdf">&Eacute;cole-sur-Mer - English</option>
+    <option value="../eecd/assessments/Ecole-sur-Mer 2012_2014_CSLF_French.pdf">&Eacute;cole-sur-Mer - French</option>
+    </select> <input type="button" value="Get Report" name="Button2" onClick="location=document.form2.flsb.options[document.form2.flsb.selectedIndex].value;" />
+</form>-->
+
+
+<select onchange="MM_jumpMenu('parent',this,0)" name="elsb">
+    
+    <option selected="selected" value="../eecd/assessments/Alberton-Elementary.pdf">Alberton Elementary</option><option value="../eecd/assessments/Amherst-Cove-Consolidated.pdf">Amherst Cove Consolidated</option>
+    <option value="../eecd/assessments/Athena-Consolidated.pdf">Athena Consolidated</option>
+    <option value="../eecd/assessments/Belfast-Consolidated.pdf">Belfast Consolidated</option>
+    <option value="../eecd/assessments/Birchwood-Intermediate.pdf">Birchwood Intermediate</option>
+    <option value="../eecd/assessments/Bloomfield-Elementary.pdf">Bloomfield Elementary</option>
+    <option value="../eecd/assessments/Bluefield-High.pdf">Bluefield High School</option>
+    <option value="../eecd/assessments/Cardigan-Consolidated.pdf">Cardigan Consolidated</option>
+    <option value="../eecd/assessments/Central-Queens-Elementary.pdf">Central Queens Elementary</option>
+    <option value="../eecd/assessments/Charlottetown-Rural-High.pdf">Charlottetown Rural High School</option>
+    <option value="../eecd/assessments/Colonel-Gray-High.pdf">Colonel Gray High School</option>
+    <option value="../eecd/assessments/Donagh-Regional.pdf">Donagh Regional</option>
+    <option value="../eecd/assessments/East-Wiltshire-Intermediate.pdf">East Wiltshire Intermediate</option>
+    <option value="../eecd/assessments/Eliot-River-Elementary.pdf">Eliot River Elementary</option>
+    <option value="../eecd/assessments/Ellerslie-Elementary.pdf">Ellerslie Elementary</option>
+    <option value="../eecd/assessments/Elm-Street-Elementary.pdf">Elm Street Elementary</option>
+    <option value="../eecd/assessments/Englewood.pdf">Englewood</option>
+    <option value="../eecd/assessments/Georgetown-Elementary.pdf">Georgetown Elementary</option>
+    <option value="../eecd/assessments/Glen-Stewart-Primary.pdf">Glen Stewart Primary</option>
+    <option value="../eecd/assessments/Greenfield-Elementary.pdf">Greenfield Elementary</option>
+    <option value="../eecd/assessments/Gulf-Shore-Consolidated.pdf">Gulf Shore Consolidated</option>
+    <option value="../eecd/assessments/Hernewood-Intermediate.pdf">Hernewood Intermediate</option>
+    <option value="../eecd/assessments/Kensington-Intermediate-Sr-High.pdf">Kensington Intermediate Sr High</option>
+    <option value="../eecd/assessments/Kinkora-High.pdf">Kinkora High</option>
+    <option value="../eecd/assessments/LM-Montgomery-Elementary.pdf">L.M. Montgomery Elementary</option>
+    <option value="../eecd/assessments/ME-Callaghan-Intermediate.pdf">M.E. Callaghan Intermediate</option>
+    <option value="../eecd/assessments/Miscouche-Consolidated.pdf">Miscouche Consolidated</option>
+    <option value="../eecd/assessments/Montague-Consolidated.pdf">Montague Consolidated</option>
+    <option value="../eecd/assessments/Montague-Intermediate.pdf">Montague Intermediate</option>
+    <option value="../eecd/assessments/Montague-Regional-High.pdf">Montague Regional High</option>
+    <option value="../eecd/assessments/Morell-Consolidated.pdf">Morell Consolidated</option>
+    <option value="../eecd/assessments/Morell-Regional-High.pdf">Morell Regional High</option>
+    <option value="../eecd/assessments/Mt-Stewart-Consolidated.pdf">Mt. Stewart Consolidated</option>
+    <option value="../eecd/assessments/OLeary-Elementary.pdf">O'Leary Elementary</option>
+    <option value="../eecd/assessments/Parkdale-Elementary.pdf">Parkdale Elementary</option>
+    <option value="../eecd/assessments/Parkside-Elementary.pdf">Parkside Elementary</option>
+    <option value="../eecd/assessments/Prince-Street-Elementary.pdf">Prince Street Elementary</option>
+    <option value="../eecd/assessments/Queen-Charlotte-Intermediate.pdf">Queen Charlotte Intermediate</option>
+    <option value="../eecd/assessments/Queen-Elizabeth-Elementary.pdf">Queen Elizabeth Elementary</option>
+    <option value="../eecd/assessments/Sherwood-Elementary.pdf">Sherwood Elementary</option>
+    <option value="../eecd/assessments/Somerset-Elementary.pdf">Somerset Elementary</option>
+    <option value="../eecd/assessments/Souris-Regional.pdf">Souris Regional</option>
+    <option value="../eecd/assessments/Southern-Kings-Consolidated.pdf">Southern Kings Consolidated</option>
+    <option value="../eecd/assessments/Spring-Park-Elementary.pdf">Spring Park Elementary</option>
+    <option value="../eecd/assessments/St-Jean-Elementary.pdf">St. Jean Elementary</option>
+    <option value="../eecd/assessments/St-Louis-Elementary.pdf">St. Louis Elementary</option>
+    <option value="../eecd/assessments/Stonepark-Intermediate.pdf">Stonepark Intermediate</option>
+    <option value="../eecd/assessments/Stratford-Elementary.pdf">Stratford Elementary</option>
+    <option value="../eecd/assessments/Summerside-Intermediate.pdf">Summerside Intermediate</option>
+    <option value="../eecd/assessments/Three-Oaks-Senior-High.pdf">Three Oaks Senior High School</option>
+    <option value="../eecd/assessments/Tignish-Elementary.pdf">Tignish Elementary</option>
+    <option value="../eecd/assessments/Vernon-River-Consolidated.pdf">Vernon River Consolidated</option>
+    <option value="../eecd/assessments/West-Kent-Elementary.pdf">West Kent Elementary</option>
+    <option value="../eecd/assessments/West-Royalty-Elementary.pdf">West Royalty Elementary</option>
+    <option value="../eecd/assessments/Westisle-Composite-High.pdf">Westisle Composite High School</option>
+    <option value="../eecd/assessments/Westwood-Primary.pdf">Westwood Primary</option>
+    </select>
