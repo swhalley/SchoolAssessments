@@ -21,21 +21,11 @@ namespace SchoolPdf
                 List<string> record = new List<string>();
 
                 ParseClassInformation(assessment, lines);
-
-                if (assessment.AssessmentType == "Math")
-                {
-                    record = ExtractSingleMathRecord(lines);
-                    ParseMathSchoolTestResults(assessment, record);
-
-                    result.Add(assessment);
-                }
-                else if (assessment.AssessmentType == "Literacy")
-                {
-                    record = ExtractSingleLiteracyRecord(lines);
-                    ParseLiteracySchoolTestResults(assessment, record); //SMELL This duplication with Math can probably be narrowed down to the number of lines for each record.
-
-                    result.Add(assessment);
-                }
+                int recordSize = (assessment.AssessmentType == "Math") ? 6 : 8;
+                
+                record = ExtractSingleRecord(lines, recordSize);
+                ParseSchoolTestResults(assessment, record, recordSize);
+                result.Add(assessment);
 
                 lines.RemoveRange(0, record.Count);
             }
@@ -60,56 +50,39 @@ namespace SchoolPdf
             assessment.ClassName = classInformation[classInformation.Length - 1];
         }
 
-
-        #region Math Extractor
-        private static List<string> ExtractSingleMathRecord(List<string> lines)
+        private static List<string> ExtractSingleRecord(List<string> lines, int recordLineSize)
         {
-            return lines.Take(6).ToList();
+            return lines.Take(recordLineSize).ToList();
         }
 
-
-        private static void ParseMathSchoolTestResults(SchoolTestResult assessment, List<string> record)
-        {
-            string[] schoolTestDetails = record[4].Split(' ');
-            string[] testYear = record[3].Split(' ');
-
-            assessment.SchoolName = schoolTestDetails[0];
-            assessment.NumberOfStudents = Int32.Parse(schoolTestDetails[1]);
-            assessment.AverageScore = Int32.Parse(schoolTestDetails[2]);
-            assessment.PercentagePassed = Int32.Parse(schoolTestDetails[3]);
-
-            assessment.AssessmentYear = testYear[0];
-        }
-
-        #endregion MathExtractor
-
-        #region Literacy Extractor
-        private static List<string> ExtractSingleLiteracyRecord(List<string> lines)
-        {
-            return lines.Take(8).ToList();
-        }
-
-        private static void ParseLiteracySchoolTestResults(SchoolTestResult assessment, List<string> record)
+        private static void ParseSchoolTestResults(SchoolTestResult assessment, List<string> record, int recordLineSize)
         {
             string schoolNamePattern = 
                 "^"             //Match from beginning of the string
                 + ".*?"         //Any character, zero or more times
                 + @"(?=\d+)";   //Until a number is hit
 
+            string scoresPattern = @"([0-9]+|\-{2})"; //Matches any number or double dash (--)
+
 
             Regex regex = new Regex(schoolNamePattern);
-            Match match = regex.Match( record[6] );
+            Match match = regex.Match( record[recordLineSize-2] );
 
             assessment.SchoolName = match.Value.Trim();
 
-            MatchCollection scores = Regex.Matches(record[6], "[0-9]+");
-            assessment.NumberOfStudents = Int32.Parse(scores[0].Value);
-            assessment.AverageScore = Int32.Parse(scores[1].Value);
-            assessment.PercentagePassed = Int32.Parse(scores[2].Value);
+            MatchCollection scores = Regex.Matches(record[recordLineSize - 2], scoresPattern);
 
-            string[] testYear = record[5].Split(' ');
+            assessment.NumberOfStudents = Int32.Parse(scores[0].Value);
+
+            int number;
+            Int32.TryParse(scores[1].Value, out number);
+            assessment.AverageScore = number;
+
+            Int32.TryParse(scores[2].Value, out number);
+            assessment.PercentagePassed = number;
+
+            string[] testYear = record[recordLineSize-3].Split(' ');
             assessment.AssessmentYear = testYear[0];
         }
-        #endregion Literacy Extractor
     }
 }

@@ -55,6 +55,8 @@
     <Compile Include="SingleMathematicsAssessmentSingleYear.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="MultipleMathematicsAssessmentSingleYear.cs" />
+    <Compile Include="GrabBag.cs" />
+    <Compile Include="MultieYearRecord.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\SchoolPdf\SchoolPdf.csproj">

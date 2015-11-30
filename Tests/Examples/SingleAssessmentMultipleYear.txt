@@ -7,5 +7,4 @@ Number of Students Average Score % Met Expectations
 École La-Belle-Cloche 7 10 4 -- -- -- -- -- --
 CSLF 61 73 68 81 82 78 80 89 73
 
-*To protect the privacy of students, results of schools with ten or fewer studen
-ts are not reported publically.
+*To protect the privacy of students, results of schools with ten or fewer students are not reported publically.
