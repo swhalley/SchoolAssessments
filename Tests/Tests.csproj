@@ -65,10 +65,12 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Examples\ExamplePDF.txt" />
+    <Content Include="Examples\Sources.txt" />
     <Content Include="Examples\SingleAssessmentMultipleYear.txt" />
     <Content Include="Examples\SingleAssessmentSingleYearMultipleClasses.txt" />
     <Content Include="Examples\MultipleAssessmentMultipleYear.txt" />
-    <Content Include="Examples\TODO.txt" />
+    <Content Include="Examples\Inbox.txt" />
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">

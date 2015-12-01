@@ -1,0 +1,11 @@
+﻿Multiple Years - Consider div the Year size instead of taking [0] and using that to match each record for year.
+
+No Data (-- when less than 10)
+
+Support Baseline scores
+
+Class Name - The Assessment type and class share a line. Sometimes the class name doesn't exist. 
+But we can use a regex to read anything after the word "Assessment" to determine if there is a class name
+examples
+Primary Literacy Assessment
+Secondary Math Assessment  521A
