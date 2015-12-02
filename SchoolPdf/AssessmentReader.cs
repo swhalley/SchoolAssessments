@@ -35,10 +35,12 @@ namespace SchoolPdf
                 for (int yearOffset = 0; yearOffset < numberAssessmentYears; yearOffset++)
                 {
                     var assessment = new SchoolTestResult();
+
                     getClassInformation(assessment, lines);
                     getSchoolName(assessment, record, recordSize);
                     getTestYear(assessment, record, recordSize, yearOffset);
                     getTestScores(assessment, record, recordSize, yearOffset);
+
                     result.Add(assessment);
                 }
 
@@ -77,7 +79,9 @@ namespace SchoolPdf
 
             assessment.AssessmentType = classInformation[1];
             assessment.SchoolType = classInformation[0];
-            assessment.ClassName = classInformation[classInformation.Length - 1];
+
+            string[] classNameTokens = record[0].Split(new string[] { "Assessment" }, StringSplitOptions.None);
+            assessment.ClassName = (classNameTokens.Length >= 2) ? classNameTokens[1].Trim() : "";
         }
 
         private void getSchoolName(SchoolTestResult assessment, List<string> record, int recordLineSize)
@@ -96,11 +100,11 @@ namespace SchoolPdf
 
             int number;
 
-            var foo = scores.Count / 3;
-            Int32.TryParse(scores[foo * 1 + yearOffset].Value, out number);
+            var scoreGroup = scores.Count / 3;
+            Int32.TryParse(scores[scoreGroup * 1 + yearOffset].Value, out number);
             assessment.AverageScore = number;
 
-            Int32.TryParse(scores[foo * 2 + yearOffset].Value, out number);
+            Int32.TryParse(scores[scoreGroup * 2 + yearOffset].Value, out number);
             assessment.MetExpectations = number;
         }
 

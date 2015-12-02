@@ -78,8 +78,8 @@ CSLF 72 83 51";
         [TestMethod]
         public void CanReadClassName()
         {
-            //TODO Some schools don't have class names...GAH DATA
-            //Since there are no way to tell this from a string line, we will manually have to clean up data generated
+            List<SchoolTestResult> result = new AssessmentReader().parse(text);
+            Assert.AreEqual("", result[0].ClassName);
         }
 
         [TestMethod]

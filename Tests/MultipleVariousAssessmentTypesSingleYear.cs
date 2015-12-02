@@ -99,7 +99,7 @@ CSLF 72 83 51
         {
             List<SchoolTestResult> result = new AssessmentReader().parse(data);
             Assert.AreEqual("521A", result[0].ClassName);
-            //Not checking Elementary school because it isn't listed
+            Assert.AreEqual("", result[1].ClassName);
         }
 
     }
