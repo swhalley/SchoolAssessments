@@ -16,12 +16,9 @@ namespace SchoolPdf
     {
         static void Main(string[] args)
         {
-            //var simple = "http://www.gov.pe.ca/eecd/assessments/Bluefield-High.pdf";
-            //var complex = "http://www.gov.pe.ca/eecd/assessments/Ecole%20La-Belle-Cloche%202012_2014_CSLF_English.pdf";
-
             List<SchoolTestResult> result = new List<SchoolTestResult>();
-            string[] urls = ConfigurationManager.AppSettings["urls"].Split(',');
 
+            string[] urls = ConfigurationManager.AppSettings["urls"].Split(',');
             Console.WriteLine("Reading " + urls.Length + " files");
 
             foreach (string url in urls)
