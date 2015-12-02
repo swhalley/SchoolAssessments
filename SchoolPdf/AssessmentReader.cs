@@ -30,14 +30,15 @@ namespace SchoolPdf
 
                 record = ExtractSingleRecord(lines, recordSize);
 
-                int assessmentYears = getNumberOfAssessmentYears(record, recordSize);
+                int numberAssessmentYears = getNumberOfAssessmentYears(record, recordSize);
 
-                for (int yearIndex = 1; yearIndex <= assessmentYears; yearIndex++)
+                for (int yearOffset = 1; yearOffset <= numberAssessmentYears; yearOffset++)
                 {
                     var assessment = new SchoolTestResult();
-                    ParseClassInformation(assessment, lines);
-                    ParseSchoolName(assessment, record, recordSize);
-                    ParseTestScores(assessment, record, recordSize, yearIndex);
+                    getClassInformation(assessment, lines);
+                    getSchoolName(assessment, record, recordSize);
+                    getTestYear(assessment, record, recordSize);
+                    getTestScores(assessment, record, recordSize, yearOffset);
                     result.Add(assessment);
                 }
 
@@ -70,7 +71,7 @@ namespace SchoolPdf
             return lines.Take(recordLineSize).ToList();
         }
 
-        private void ParseClassInformation(SchoolTestResult assessment, List<string> record)
+        private void getClassInformation(SchoolTestResult assessment, List<string> record)
         {
             string[] classInformation = record[0].Split(' ');
 
@@ -79,7 +80,7 @@ namespace SchoolPdf
             assessment.ClassName = classInformation[classInformation.Length - 1];
         }
 
-        private void ParseSchoolName(SchoolTestResult assessment, List<string> record, int recordLineSize)
+        private void getSchoolName(SchoolTestResult assessment, List<string> record, int recordLineSize)
         {
             Regex regex = new Regex(schoolNamePattern);
             Match match = regex.Match(record[recordLineSize - 2]);
@@ -87,7 +88,7 @@ namespace SchoolPdf
             assessment.SchoolName = match.Value.Trim();
         }
 
-        private void ParseTestScores(SchoolTestResult assessment, List<string> record, int recordLineSize, int yearOffset)
+        private void getTestScores(SchoolTestResult assessment, List<string> record, int recordLineSize, int yearOffset)
         {
             MatchCollection scores = Regex.Matches(record[recordLineSize - 2], scoresPattern);
 
@@ -99,9 +100,10 @@ namespace SchoolPdf
 
             Int32.TryParse(scores[2].Value, out number);
             assessment.PercentagePassed = number;
+        }
 
-
-
+        private void getTestYear(SchoolTestResult assessment, List<string> record, int recordLineSize)
+        {
             string[] testYear = record[recordLineSize - 3].Split(' ');
             assessment.AssessmentYear = testYear[0];
         }
