@@ -65,7 +65,7 @@ CSLF 72 83 51";
         {
             List<SchoolTestResult> result = new AssessmentReader().parse(text);
 
-            Assert.AreEqual(78, result[0].PercentagePassed);
+            Assert.AreEqual(78, result[0].MetExpectations);
         }
 
         [TestMethod]

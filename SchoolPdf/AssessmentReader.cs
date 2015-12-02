@@ -32,12 +32,12 @@ namespace SchoolPdf
 
                 int numberAssessmentYears = getNumberOfAssessmentYears(record, recordSize);
 
-                for (int yearOffset = 1; yearOffset <= numberAssessmentYears; yearOffset++)
+                for (int yearOffset = 0; yearOffset < numberAssessmentYears; yearOffset++)
                 {
                     var assessment = new SchoolTestResult();
                     getClassInformation(assessment, lines);
                     getSchoolName(assessment, record, recordSize);
-                    getTestYear(assessment, record, recordSize);
+                    getTestYear(assessment, record, recordSize, yearOffset);
                     getTestScores(assessment, record, recordSize, yearOffset);
                     result.Add(assessment);
                 }
@@ -92,20 +92,22 @@ namespace SchoolPdf
         {
             MatchCollection scores = Regex.Matches(record[recordLineSize - 2], scoresPattern);
 
-            assessment.NumberOfStudents = Int32.Parse(scores[0].Value);
+            assessment.NumberOfStudents = Int32.Parse(scores[0 + yearOffset].Value);
 
             int number;
-            Int32.TryParse(scores[1].Value, out number);
+
+            var foo = scores.Count / 3;
+            Int32.TryParse(scores[foo * 1 + yearOffset].Value, out number);
             assessment.AverageScore = number;
 
-            Int32.TryParse(scores[2].Value, out number);
-            assessment.PercentagePassed = number;
+            Int32.TryParse(scores[foo * 2 + yearOffset].Value, out number);
+            assessment.MetExpectations = number;
         }
 
-        private void getTestYear(SchoolTestResult assessment, List<string> record, int recordLineSize)
+        private void getTestYear(SchoolTestResult assessment, List<string> record, int recordLineSize, int yearOffset)
         {
             string[] testYear = record[recordLineSize - 3].Split(' ');
-            assessment.AssessmentYear = testYear[0];
+            assessment.AssessmentYear = testYear[yearOffset];
         }
     }
 }

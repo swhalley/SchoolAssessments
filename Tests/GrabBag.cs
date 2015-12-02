@@ -58,7 +58,7 @@ CSLF 61 73 68
 
 *To protect the privacy of students, results of schools with ten or fewer students are not reported publically.";
 
-            Assert.AreEqual(0, new AssessmentReader().parse(text)[0].PercentagePassed);
+            Assert.AreEqual(0, new AssessmentReader().parse(text)[0].MetExpectations);
 
         }
     }

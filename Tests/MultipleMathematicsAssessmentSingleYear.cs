@@ -79,8 +79,8 @@ ELSB 578 61 71
         {
             List<SchoolTestResult> result = new AssessmentReader().parse(data);
 
-            Assert.AreEqual(68, result[0].PercentagePassed);
-            Assert.AreEqual(67, result[1].PercentagePassed);
+            Assert.AreEqual(68, result[0].MetExpectations);
+            Assert.AreEqual(67, result[1].MetExpectations);
 
         }
 

@@ -20,7 +20,7 @@ namespace SchoolPdf
 
         public int AverageScore { get; set; }
 
-        public int PercentagePassed { get; set; }
+        public int MetExpectations { get; set; }
 
         public String AssessmentYear { get; set; }
     }
