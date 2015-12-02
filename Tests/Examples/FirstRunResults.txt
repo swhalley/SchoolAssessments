@@ -1,0 +1,1895 @@
+Reading 56 files
+Error Reading http://www.gov.pe.ca/eecd/assessments/Montague-Intermediate.pdf
+System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at SchoolPdf.AssessmentReader.getAssessmentType(List`1 lines) in e:\Development\SchoolPdf\SchoolPdf\AssessmentReader.cs:line 64
+   at SchoolPdf.AssessmentReader.parse(String text) in e:\Development\SchoolPdf\SchoolPdf\AssessmentReader.cs:line 28
+   at SchoolPdf.Program.Main(String[] args) in e:\Development\SchoolPdf\SchoolPdf\Program.cs:line 34
+
+Error Reading http://www.gov.pe.ca/eecd/assessments/Queen-Charlotte-Intermediate.pdf
+System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+   at System.ThrowHelper.ThrowArgumentOutOfRangeException()
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at SchoolPdf.AssessmentReader.getNumberOfAssessmentYears(List`1 record, Int32 recordLineSize) in e:\Development\SchoolPdf\SchoolPdf\AssessmentReader.cs:line69
+   at SchoolPdf.AssessmentReader.parse(String text) in e:\Development\SchoolPdf\SchoolPdf\AssessmentReader.cs:line 33
+   at SchoolPdf.Program.Main(String[] args) in e:\Development\SchoolPdf\SchoolPdf\Program.cs:line 34
+
+   Error Reading
+http://www.gov.pe.ca/eecd/assessments/Stonepark-Intermediate.pdf
+System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at SchoolPdf.AssessmentReader.getAssessmentType(List`1 lines) in e:\Development\SchoolPdf\SchoolPdf\AssessmentReader.cs:line 64
+   at SchoolPdf.AssessmentReader.parse(String text) in e:\Development\SchoolPdf\SchoolPdf\AssessmentReader.cs:line 28
+   at SchoolPdf.Program.Main(String[] args) in e:\Development\SchoolPdf\SchoolPdf\Program.cs:line 34
+   
+[
+  {
+    "AssessmentType": "15",
+    "SchoolType": "Alberton",
+    "ClassName": "",
+    "SchoolName": "Alberton",
+    "NumberOfStudents": 20,
+    "AverageScore": 45,
+    "MetExpectations": 20,
+    "AssessmentYear": "2013"
+  },
+  {
+    "AssessmentType": "15",
+    "SchoolType": "Alberton",
+    "ClassName": "",
+    "SchoolName": "Alberton",
+    "NumberOfStudents": 29,
+    "AverageScore": 66,
+    "MetExpectations": 76,
+    "AssessmentYear": "2014"
+  },
+  {
+    "AssessmentType": "15",
+    "SchoolType": "Alberton",
+    "ClassName": "",
+    "SchoolName": "Alberton",
+    "NumberOfStudents": 13,
+    "AverageScore": 68,
+    "MetExpectations": 62,
+    "AssessmentYear": "2015"
+  },
+  {
+    "AssessmentType": "Cove",
+    "SchoolType": "Amherst",
+    "ClassName": "",
+    "SchoolName": "Amherst Cove",
+    "NumberOfStudents": 11,
+    "AverageScore": 63,
+    "MetExpectations": 64,
+    "AssessmentYear": "2013"
+  },
+  {
+    "AssessmentType": "Cove",
+    "SchoolType": "Amherst",
+    "ClassName": "",
+    "SchoolName": "Amherst Cove",
+    "NumberOfStudents": 10,
+    "AverageScore": 0,
+    "MetExpectations": 0,
+    "AssessmentYear": "2014"
+  },
+  {
+    "AssessmentType": "Cove",
+    "SchoolType": "Amherst",
+    "ClassName": "",
+    "SchoolName": "Amherst Cove",
+    "NumberOfStudents": 19,
+    "AverageScore": 72,
+    "MetExpectations": 79,
+    "AssessmentYear": "2015"
+  },
+  {
+    "AssessmentType": "40",
+    "SchoolType": "Athena",
+    "ClassName": "",
+    "SchoolName": "Athena",
+    "NumberOfStudents": 26,
+    "AverageScore": 71,
+    "MetExpectations": 69,
+    "AssessmentYear": "2013"
+  },
+  {
+    "AssessmentType": "40",
+    "SchoolType": "Athena",
+    "ClassName": "",
+    "SchoolName": "Athena",
+    "NumberOfStudents": 46,
+    "AverageScore": 70,
+    "MetExpectations": 65,
+    "AssessmentYear": "2014"
+  },
+  {
+    "AssessmentType": "40",
+    "SchoolType": "Athena",
+    "ClassName": "",
+    "SchoolName": "Athena",
+    "NumberOfStudents": 34,
+    "AverageScore": 83,
+    "MetExpectations": 85,
+    "AssessmentYear": "2015"
+  },
+  {
+    "AssessmentType": "11",
+    "SchoolType": "Belfast",
+    "ClassName": "",
+    "SchoolName": "Belfast",
+    "NumberOfStudents": 17,
+    "AverageScore": 70,
+    "MetExpectations": 53,
+    "AssessmentYear": "2013"
+  },
+  {
+    "AssessmentType": "11",
+    "SchoolType": "Belfast",
+    "ClassName": "",
+    "SchoolName": "Belfast",
+    "NumberOfStudents": 14,
+    "AverageScore": 73,
+    "MetExpectations": 86,
+    "AssessmentYear": "2014"
+  },
+  {
+    "AssessmentType": "11",
+    "SchoolType": "Belfast",
+    "ClassName": "",
+    "SchoolName": "Belfast",
+    "NumberOfStudents": 9,
+    "AverageScore": 0,
+    "MetExpectations": 0,
+    "AssessmentYear": "2015"
+  },
+  {
+    "AssessmentType": "55",
+    "SchoolType": "Birchwood",
+    "ClassName": "",
+    "SchoolName": "Birchwood",
+    "NumberOfStudents": 59,
+    "AverageScore": 61,
+    "MetExpectations": 46,
+    "AssessmentYear": "2013"
+  },
+  {
+    "AssessmentType": "55",
+    "SchoolType": "Birchwood",
+    "ClassName": "",
+    "SchoolName": "Birchwood",
+    "NumberOfStudents": 42,
+    "AverageScore": 64,
+    "MetExpectations": 48,
+    "AssessmentYear": "2014"
+  },
+  {
+    "AssessmentType": "55",
+    "SchoolType": "Birchwood",
+    "ClassName": "",
+    "SchoolName": "Birchwood",
+    "NumberOfStudents": 66,
+    "AverageScore": 65,
+    "MetExpectations": 48,
+    "AssessmentYear": "2015"
+  },
+  {
+    "AssessmentType": "23",
+    "SchoolType": "Bloomfield",
+    "ClassName": "",
+    "SchoolName": "Bloomfield",
+    "NumberOfStudents": 18,
+    "AverageScore": 50,
+    "MetExpectations": 28,
+    "AssessmentYear": "2013"
+  },
+  {
+    "AssessmentType": "23",
+    "SchoolType": "Bloomfield",
+    "ClassName": "",
+    "SchoolName": "Bloomfield",
+    "NumberOfStudents": 34,
+    "AverageScore": 48,
+    "MetExpectations": 21,
+    "AssessmentYear": "2014"
+  },
+  {
+    "AssessmentType": "23",
+    "SchoolType": "Bloomfield",
+    "ClassName": "",
+    "SchoolName": "Bloomfield",
+    "NumberOfStudents": 22,
+    "AverageScore": 44,
+    "MetExpectations": 14,
+    "AssessmentYear": "2015"
+  },
+  {
+    "AssessmentType": "Math",
+    "SchoolType": "Secondary",
+    "ClassName": "521A",
+    "SchoolName": "Bluefield",
+    "NumberOfStudents": 95,
+    "AverageScore": 58,
+    "MetExpectations": 68,
+    "AssessmentYear": "2015"
+  },
+  {
+    "AssessmentType": "Math",
+    "SchoolType": "Secondary",
+    "ClassName": "521B",
+    "SchoolName": "Bluefield",
+    "NumberOfStudents": 93,
+    "AverageScore": 58,
+    "MetExpectations": 67,
+    "AssessmentYear": "2015"
+  },
+  {
+    "AssessmentType": "16",
+    "SchoolType": "Cardigan",
+    "ClassName": "",
+    "SchoolName": "Cardigan",
+    "NumberOfStudents": 10,
+    "AverageScore": 0,
+    "MetExpectations": 0,
+    "AssessmentYear": "2013"
+  },
+  {
+    "AssessmentType": "16",
+    "SchoolType": "Cardigan",
+    "ClassName": "",
+    "SchoolName": "Cardigan",
+    "NumberOfStudents": 21,
+    "AverageScore": 74,
+    "MetExpectations": 95,
+    "AssessmentYear": "2014"
+  },
+  {
+    "AssessmentType": "16",
+    "SchoolType": "Cardigan",
+    "ClassName": "",
+    "SchoolName": "Cardigan",
+    "NumberOfStudents": 14,
+    "AverageScore": 76,
+    "MetExpectations": 93,
+    "AssessmentYear": "2015"
+  },
+  {
+    "AssessmentType": "Queens",
+    "SchoolType": "Central",
+    "ClassName": "",
+    "SchoolName": "Central Queens",
+    "NumberOfStudents": 25,
+    "AverageScore": 64,
+    "MetExpectations": 64,
+    "AssessmentYear": "2013"
+  },
+  {
+    "AssessmentType": "Queens",
+    "SchoolType": "Central",
+    "ClassName": "",
+    "SchoolName": "Central Queens",
+    "NumberOfStudents": 31,
+    "AverageScore": 60,
+    "MetExpectations": 52,
+    "AssessmentYear": "2014"
+  },
+  {
+    "AssessmentType": "Queens",
+    "SchoolType": "Central",
+    "ClassName": "",
+    "SchoolName": "Central Queens",
+    "NumberOfStudents": 30,
+    "AverageScore": 68,
+    "MetExpectations": 77,
+    "AssessmentYear": "2015"
+  },
+  {
+    "AssessmentType": "Math",
+    "SchoolType": "Secondary",
+    "ClassName": "521A",
+    "SchoolName": "Charlottetown Rural",
+    "NumberOfStudents": 91,
+    "AverageScore": 54,
+    "MetExpectations": 57,
+    "AssessmentYear": "2015"
+  },
+  {
+    "AssessmentType": "Math",
+    "SchoolType": "Secondary",
+    "ClassName": "521B",
+    "SchoolName": "Charlottetown Rural",
+    "NumberOfStudents": 117,
+    "AverageScore": 60,
+    "MetExpectations": 69,
+    "AssessmentYear": "2015"
+  },
+  {
+    "AssessmentType": "Math",
+    "SchoolType": "Secondary",
+    "ClassName": "521A",
+    "SchoolName": "Colonel Gray",
+    "NumberOfStudents": 89,
+    "AverageScore": 54,
+    "MetExpectations": 58,
+    "AssessmentYear": "2015"
+  },
+  {
+    "AssessmentType": "Math",
+    "SchoolType": "Secondary",
+    "ClassName": "521B",
+    "SchoolName": "Colonel Gray",
+    "NumberOfStudents": 117,
+    "AverageScore": 67,
+    "MetExpectations": 82,
+    "AssessmentYear": "2015"
+  },
+  {
+    "AssessmentType": "",
+    "SchoolType": "Donagh",
+    "ClassName": "",
+    "SchoolName": "Donagh",
+    "NumberOfStudents": 14,
+    "AverageScore": 70,
+    "MetExpectations": 71,
+    "AssessmentYear": "2013"
+  },
+  {
+    "AssessmentType": "",
+    "SchoolType": "Donagh",
+    "ClassName": "",
+    "SchoolName": "Donagh",
+    "NumberOfStudents": 16,
+    "AverageScore": 80,
+    "MetExpectations": 81,
+    "AssessmentYear": "2014"
+  },
+  {
+    "AssessmentType": "",
+    "SchoolType": "Donagh",
+    "ClassName": "",
+    "SchoolName": "Donagh",
+    "NumberOfStudents": 24,
+    "AverageScore": 82,
+    "MetExpectations": 88,
+    "AssessmentYear": "2015"
+  },
+  {
+    "AssessmentType": "Wiltshire",
+    "SchoolType": "East",
+    "ClassName": "",
+    "SchoolName": "East Wiltshire",
+    "NumberOfStudents": 168,
+    "AverageScore": 71,
+    "MetExpectations": 60,
+    "AssessmentYear": "2013"
+  },
+  {
+    "AssessmentType": "Wiltshire",
+    "SchoolType": "East",
+    "ClassName": "",
+    "SchoolName": "East Wiltshire",
+    "NumberOfStudents": 166,
+    "AverageScore": 70,
+    "MetExpectations": 68,
+    "AssessmentYear": "2014"
+  },
+  {
+    "AssessmentType": "Wiltshire",
+    "SchoolType": "East",
+    "ClassName": "",
+    "SchoolName": "East Wiltshire",
+    "NumberOfStudents": 172,
+    "AverageScore": 73,
+    "MetExpectations": 69,
+    "AssessmentYear": "2015"
+  },
+  {
+    "AssessmentType": "River",
+    "SchoolType": "Eliot",
+    "ClassName": "",
+    "SchoolName": "Eliot River",
+    "NumberOfStudents": 124,
+    "AverageScore": 51,
+    "MetExpectations": 31,
+    "AssessmentYear": "2013"
+  },
+  {
+    "AssessmentType": "River",
+    "SchoolType": "Eliot",
+    "ClassName": "",
+    "SchoolName": "Eliot River",
+    "NumberOfStudents": 139,
+    "AverageScore": 69,
+    "MetExpectations": 65,
+    "AssessmentYear": "2014"
+  },
+  {
+    "AssessmentType": "River",
+    "SchoolType": "Eliot",
+    "ClassName": "",
+    "SchoolName": "Eliot River",
+    "NumberOfStudents": 155,
+    "AverageScore": 72,
+    "MetExpectations": 78,
+    "AssessmentYear": "2015"
+  },
+  {
+    "AssessmentType": "38",
+    "SchoolType": "Ellerslie",
+    "ClassName": "",
+    "SchoolName": "Ellerslie",
+    "NumberOfStudents": 20,
+    "AverageScore": 81,
+    "MetExpectations": 100,
+    "AssessmentYear": "2013"
+  },
+  {
+    "AssessmentType": "38",
+    "SchoolType": "Ellerslie",
+    "ClassName": "",
+    "SchoolName": "Ellerslie",
+    "NumberOfStudents": 27,
+    "AverageScore": 86,
+    "MetExpectations": 100,
+    "AssessmentYear": "2014"
+  },
+  {
+    "AssessmentType": "38",
+    "SchoolType": "Ellerslie",
+    "ClassName": "",
+    "SchoolName": "Ellerslie",
+    "NumberOfStudents": 32,
+    "AverageScore": 75,
+    "MetExpectations": 84,
+    "AssessmentYear": "2015"
+  },
+  {
+    "AssessmentType": "Street",
+    "SchoolType": "Elm",
+    "ClassName": "",
+    "SchoolName": "Elm Street",
+    "NumberOfStudents": 52,
+    "AverageScore": 59,
+    "MetExpectations": 46,
+    "AssessmentYear": "2013"
+  },
+  {
+    "AssessmentType": "Street",
+    "SchoolType": "Elm",
+    "ClassName": "",
+    "SchoolName": "Elm Street",
+    "NumberOfStudents": 52,
+    "AverageScore": 65,
+    "MetExpectations": 69,
+    "AssessmentYear": "2014"
+  },
+  {
+    "AssessmentType": "Street",
+    "SchoolType": "Elm",
+    "ClassName": "",
+    "SchoolName": "Elm Street",
+    "NumberOfStudents": 57,
+    "AverageScore": 65,
+    "MetExpectations": 61,
+    "AssessmentYear": "2015"
+  },
+  {
+    "AssessmentType": "16",
+    "SchoolType": "Englewood",
+    "ClassName": "",
+    "SchoolName": "Englewood",
+    "NumberOfStudents": 14,
+    "AverageScore": 69,
+    "MetExpectations": 64,
+    "AssessmentYear": "2013"
+  },
+  {
+    "AssessmentType": "16",
+    "SchoolType": "Englewood",
+    "ClassName": "",
+    "SchoolName": "Englewood",
+    "NumberOfStudents": 18,
+    "AverageScore": 75,
+    "MetExpectations": 78,
+    "AssessmentYear": "2014"
+  },
+  {
+    "AssessmentType": "16",
+    "SchoolType": "Englewood",
+    "ClassName": "",
+    "SchoolName": "Englewood",
+    "NumberOfStudents": 18,
+    "AverageScore": 72,
+    "MetExpectations": 67,
+    "AssessmentYear": "2015"
+  },
+  {
+    "AssessmentType": "10",
+    "SchoolType": "Georgetown",
+    "ClassName": "",
+    "SchoolName": "Georgetown",
+    "NumberOfStudents": 13,
+    "AverageScore": 54,
+    "MetExpectations": 38,
+    "AssessmentYear": "2013"
+  },
+  {
+    "AssessmentType": "10",
+    "SchoolType": "Georgetown",
+    "ClassName": "",
+    "SchoolName": "Georgetown",
+    "NumberOfStudents": 6,
+    "AverageScore": 0,
+    "MetExpectations": 0,
+    "AssessmentYear": "2014"
+  },
+  {
+    "AssessmentType": "10",
+    "SchoolType": "Georgetown",
+    "ClassName": "",
+    "SchoolName": "Georgetown",
+    "NumberOfStudents": 6,
+    "AverageScore": 0,
+    "MetExpectations": 0,
+    "AssessmentYear": "2015"
+  },
+  {
+    "AssessmentType": "Stewart",
+    "SchoolType": "Glen",
+    "ClassName": "",
+    "SchoolName": "Glen Stewart",
+    "NumberOfStudents": 130,
+    "AverageScore": 74,
+    "MetExpectations": 58,
+    "AssessmentYear": "2013"
+  },
+  {
+    "AssessmentType": "Stewart",
+    "SchoolType": "Glen",
+    "ClassName": "",
+    "SchoolName": "Glen Stewart",
+    "NumberOfStudents": 137,
+    "AverageScore": 74,
+    "MetExpectations": 64,
+    "AssessmentYear": "2014"
+  },
+  {
+    "AssessmentType": "Stewart",
+    "SchoolType": "Glen",
+    "ClassName": "",
+    "SchoolName": "Glen Stewart",
+    "NumberOfStudents": 153,
+    "AverageScore": 76,
+    "MetExpectations": 61,
+    "AssessmentYear": "2015"
+  },
+  {
+    "AssessmentType": "56",
+    "SchoolType": "Greenfield",
+    "ClassName": "",
+    "SchoolName": "Greenfield",
+    "NumberOfStudents": 48,
+    "AverageScore": 67,
+    "MetExpectations": 60,
+    "AssessmentYear": "2013"
+  },
+  {
+    "AssessmentType": "56",
+    "SchoolType": "Greenfield",
+    "ClassName": "",
+    "SchoolName": "Greenfield",
+    "NumberOfStudents": 46,
+    "AverageScore": 73,
+    "MetExpectations": 80,
+    "AssessmentYear": "2014"
+  },
+  {
+    "AssessmentType": "56",
+    "SchoolType": "Greenfield",
+    "ClassName": "",
+    "SchoolName": "Greenfield",
+    "NumberOfStudents": 58,
+    "AverageScore": 77,
+    "MetExpectations": 81,
+    "AssessmentYear": "2015"
+  },
+  {
+    "AssessmentType": "Shore",
+    "SchoolType": "Gulf",
+    "ClassName": "",
+    "SchoolName": "Gulf Shore",
+    "NumberOfStudents": 21,
+    "AverageScore": 72,
+    "MetExpectations": 76,
+    "AssessmentYear": "2013"
+  },
+  {
+    "AssessmentType": "Shore",
+    "SchoolType": "Gulf",
+    "ClassName": "",
+    "SchoolName": "Gulf Shore",
+    "NumberOfStudents": 22,
+    "AverageScore": 74,
+    "MetExpectations": 77,
+    "AssessmentYear": "2014"
+  },
+  {
+    "AssessmentType": "Shore",
+    "SchoolType": "Gulf",
+    "ClassName": "",
+    "SchoolName": "Gulf Shore",
+    "NumberOfStudents": 13,
+    "AverageScore": 86,
+    "MetExpectations": 85,
+    "AssessmentYear": "2015"
+  },
+  {
+    "AssessmentType": "91",
+    "SchoolType": "Hernewood",
+    "ClassName": "",
+    "SchoolName": "Hernewood",
+    "NumberOfStudents": 90,
+    "AverageScore": 67,
+    "MetExpectations": 53,
+    "AssessmentYear": "2013"
+  },
+  {
+    "AssessmentType": "91",
+    "SchoolType": "Hernewood",
+    "ClassName": "",
+    "SchoolName": "Hernewood",
+    "NumberOfStudents": 75,
+    "AverageScore": 63,
+    "MetExpectations": 53,
+    "AssessmentYear": "2014"
+  },
+  {
+    "AssessmentType": "91",
+    "SchoolType": "Hernewood",
+    "ClassName": "",
+    "SchoolName": "Hernewood",
+    "NumberOfStudents": 70,
+    "AverageScore": 71,
+    "MetExpectations": 63,
+    "AssessmentYear": "2015"
+  },
+  {
+    "AssessmentType": "",
+    "SchoolType": "Kensington",
+    "ClassName": "",
+    "SchoolName": "Kensington",
+    "NumberOfStudents": 52,
+    "AverageScore": 74,
+    "MetExpectations": 69,
+    "AssessmentYear": "2013"
+  },
+  {
+    "AssessmentType": "",
+    "SchoolType": "Kensington",
+    "ClassName": "",
+    "SchoolName": "Kensington",
+    "NumberOfStudents": 37,
+    "AverageScore": 80,
+    "MetExpectations": 84,
+    "AssessmentYear": "2014"
+  },
+  {
+    "AssessmentType": "",
+    "SchoolType": "Kensington",
+    "ClassName": "",
+    "SchoolName": "Kensington",
+    "NumberOfStudents": 42,
+    "AverageScore": 71,
+    "MetExpectations": 69,
+    "AssessmentYear": "2015"
+  },
+  {
+    "AssessmentType": "Math",
+    "SchoolType": "Secondary",
+    "ClassName": "521A",
+    "SchoolName": "Kensington",
+    "NumberOfStudents": 20,
+    "AverageScore": 53,
+    "MetExpectations": 50,
+    "AssessmentYear": "2015"
+  },
+  {
+    "AssessmentType": "Math",
+    "SchoolType": "Secondary",
+    "ClassName": "521B",
+    "SchoolName": "Kensington",
+    "NumberOfStudents": 22,
+    "AverageScore": 51,
+    "MetExpectations": 46,
+    "AssessmentYear": "2015"
+  },
+  {
+    "AssessmentType": "",
+    "SchoolType": "Kinkora",
+    "ClassName": "",
+    "SchoolName": "Kinkora",
+    "NumberOfStudents": 31,
+    "AverageScore": 73,
+    "MetExpectations": 71,
+    "AssessmentYear": "2013"
+  },
+  {
+    "AssessmentType": "",
+    "SchoolType": "Kinkora",
+    "ClassName": "",
+    "SchoolName": "Kinkora",
+    "NumberOfStudents": 31,
+    "AverageScore": 75,
+    "MetExpectations": 81,
+    "AssessmentYear": "2014"
+  },
+  {
+    "AssessmentType": "",
+    "SchoolType": "Kinkora",
+    "ClassName": "",
+    "SchoolName": "Kinkora",
+    "NumberOfStudents": 25,
+    "AverageScore": 75,
+    "MetExpectations": 80,
+    "AssessmentYear": "2015"
+  },
+  {
+    "AssessmentType": "Math",
+    "SchoolType": "Secondary",
+    "ClassName": "521A",
+    "SchoolName": "Kinkora",
+    "NumberOfStudents": 14,
+    "AverageScore": 55,
+    "MetExpectations": 64,
+    "AssessmentYear": "2015"
+  },
+  {
+    "AssessmentType": "Math",
+    "SchoolType": "Secondary",
+    "ClassName": "521B",
+    "SchoolName": "Kinkora",
+    "NumberOfStudents": 11,
+    "AverageScore": 68,
+    "MetExpectations": 73,
+    "AssessmentYear": "2015"
+  },
+  {
+    "AssessmentType": "Literacy",
+    "SchoolType": "Primary",
+    "ClassName": "- English Language Program",
+    "SchoolName": "L. M. Montgomery",
+    "NumberOfStudents": 56,
+    "AverageScore": 88,
+    "MetExpectations": 84,
+    "AssessmentYear": "2013"
+  },
+  {
+    "AssessmentType": "Literacy",
+    "SchoolType": "Primary",
+    "ClassName": "- English Language Program",
+    "SchoolName": "L. M. Montgomery",
+    "NumberOfStudents": 47,
+    "AverageScore": 85,
+    "MetExpectations": 81,
+    "AssessmentYear": "2014"
+  },
+  {
+    "AssessmentType": "Literacy",
+    "SchoolType": "Primary",
+    "ClassName": "- English Language Program",
+    "SchoolName": "L. M. Montgomery",
+    "NumberOfStudents": 46,
+    "AverageScore": 80,
+    "MetExpectations": 80,
+    "AssessmentYear": "2015"
+  },
+  {
+    "AssessmentType": "Literacy",
+    "SchoolType": "Elementary",
+    "ClassName": "- English Language Program",
+    "SchoolName": "L. M. Montgomery",
+    "NumberOfStudents": 39,
+    "AverageScore": 80,
+    "MetExpectations": 87,
+    "AssessmentYear": "2013"
+  },
+  {
+    "AssessmentType": "Literacy",
+    "SchoolType": "Elementary",
+    "ClassName": "- English Language Program",
+    "SchoolName": "L. M. Montgomery",
+    "NumberOfStudents": 49,
+    "AverageScore": 73,
+    "MetExpectations": 92,
+    "AssessmentYear": "2014"
+  },
+  {
+    "AssessmentType": "Literacy",
+    "SchoolType": "Elementary",
+    "ClassName": "- English Language Program",
+    "SchoolName": "L. M. Montgomery",
+    "NumberOfStudents": 63,
+    "AverageScore": 70,
+    "MetExpectations": 87,
+    "AssessmentYear": "2015"
+  },
+  {
+    "AssessmentType": "Math",
+    "SchoolType": "Primary",
+    "ClassName": "",
+    "SchoolName": "L.  M. Montgomery",
+    "NumberOfStudents": 56,
+    "AverageScore": 71,
+    "MetExpectations": 55,
+    "AssessmentYear": "2013"
+  },
+  {
+    "AssessmentType": "Math",
+    "SchoolType": "Primary",
+    "ClassName": "",
+    "SchoolName": "L.  M. Montgomery",
+    "NumberOfStudents": 49,
+    "AverageScore": 71,
+    "MetExpectations": 53,
+    "AssessmentYear": "2014"
+  },
+  {
+    "AssessmentType": "Math",
+    "SchoolType": "Primary",
+    "ClassName": "",
+    "SchoolName": "L.  M. Montgomery",
+    "NumberOfStudents": 47,
+    "AverageScore": 73,
+    "MetExpectations": 53,
+    "AssessmentYear": "2015"
+  },
+  {
+    "AssessmentType": "Math",
+    "SchoolType": "Elementary",
+    "ClassName": "",
+    "SchoolName": "L.  M. Montgomery",
+    "NumberOfStudents": 39,
+    "AverageScore": 60,
+    "MetExpectations": 51,
+    "AssessmentYear": "2013"
+  },
+  {
+    "AssessmentType": "Math",
+    "SchoolType": "Elementary",
+    "ClassName": "",
+    "SchoolName": "L.  M. Montgomery",
+    "NumberOfStudents": 50,
+    "AverageScore": 71,
+    "MetExpectations": 74,
+    "AssessmentYear": "2014"
+  },
+  {
+    "AssessmentType": "Math",
+    "SchoolType": "Elementary",
+    "ClassName": "",
+    "SchoolName": "L.  M. Montgomery",
+    "NumberOfStudents": 63,
+    "AverageScore": 71,
+    "MetExpectations": 76,
+    "AssessmentYear": "2015"
+  },
+  {
+    "AssessmentType": "E.",
+    "SchoolType": "M.",
+    "ClassName": "",
+    "SchoolName": "M. E. Callaghan",
+    "NumberOfStudents": 71,
+    "AverageScore": 70,
+    "MetExpectations": 58,
+    "AssessmentYear": "2013"
+  },
+  {
+    "AssessmentType": "E.",
+    "SchoolType": "M.",
+    "ClassName": "",
+    "SchoolName": "M. E. Callaghan",
+    "NumberOfStudents": 63,
+    "AverageScore": 73,
+    "MetExpectations": 70,
+    "AssessmentYear": "2014"
+  },
+  {
+    "AssessmentType": "E.",
+    "SchoolType": "M.",
+    "ClassName": "",
+    "SchoolName": "M. E. Callaghan",
+    "NumberOfStudents": 71,
+    "AverageScore": 74,
+    "MetExpectations": 68,
+    "AssessmentYear": "2015"
+  },
+  {
+    "AssessmentType": "25",
+    "SchoolType": "Miscouche",
+    "ClassName": "",
+    "SchoolName": "Miscouche",
+    "NumberOfStudents": 22,
+    "AverageScore": 76,
+    "MetExpectations": 68,
+    "AssessmentYear": "2013"
+  },
+  {
+    "AssessmentType": "25",
+    "SchoolType": "Miscouche",
+    "ClassName": "",
+    "SchoolName": "Miscouche",
+    "NumberOfStudents": 26,
+    "AverageScore": 63,
+    "MetExpectations": 50,
+    "AssessmentYear": "2014"
+  },
+  {
+    "AssessmentType": "25",
+    "SchoolType": "Miscouche",
+    "ClassName": "",
+    "SchoolName": "Miscouche",
+    "NumberOfStudents": 17,
+    "AverageScore": 81,
+    "MetExpectations": 76,
+    "AssessmentYear": "2015"
+  },
+  {
+    "AssessmentType": "",
+    "SchoolType": "Montague",
+    "ClassName": "",
+    "SchoolName": "Montague",
+    "NumberOfStudents": 54,
+    "AverageScore": 63,
+    "MetExpectations": 63,
+    "AssessmentYear": "2013"
+  },
+  {
+    "AssessmentType": "",
+    "SchoolType": "Montague",
+    "ClassName": "",
+    "SchoolName": "Montague",
+    "NumberOfStudents": 60,
+    "AverageScore": 64,
+    "MetExpectations": 65,
+    "AssessmentYear": "2014"
+  },
+  {
+    "AssessmentType": "",
+    "SchoolType": "Montague",
+    "ClassName": "",
+    "SchoolName": "Montague",
+    "NumberOfStudents": 54,
+    "AverageScore": 68,
+    "MetExpectations": 67,
+    "AssessmentYear": "2015"
+  },
+  {
+    "AssessmentType": "Math",
+    "SchoolType": "Secondary",
+    "ClassName": "521A",
+    "SchoolName": "Montague",
+    "NumberOfStudents": 73,
+    "AverageScore": 53,
+    "MetExpectations": 58,
+    "AssessmentYear": "2015"
+  },
+  {
+    "AssessmentType": "Math",
+    "SchoolType": "Secondary",
+    "ClassName": "521B",
+    "SchoolName": "Montague",
+    "NumberOfStudents": 52,
+    "AverageScore": 80,
+    "MetExpectations": 94,
+    "AssessmentYear": "2015"
+  },
+  {
+    "AssessmentType": "",
+    "SchoolType": "Morell",
+    "ClassName": "",
+    "SchoolName": "Morell",
+    "NumberOfStudents": 25,
+    "AverageScore": 74,
+    "MetExpectations": 68,
+    "AssessmentYear": "2013"
+  },
+  {
+    "AssessmentType": "",
+    "SchoolType": "Morell",
+    "ClassName": "",
+    "SchoolName": "Morell",
+    "NumberOfStudents": 20,
+    "AverageScore": 69,
+    "MetExpectations": 75,
+    "AssessmentYear": "2014"
+  },
+  {
+    "AssessmentType": "",
+    "SchoolType": "Morell",
+    "ClassName": "",
+    "SchoolName": "Morell",
+    "NumberOfStudents": 22,
+    "AverageScore": 67,
+    "MetExpectations": 64,
+    "AssessmentYear": "2015"
+  },
+  {
+    "AssessmentType": "",
+    "SchoolType": "Morell",
+    "ClassName": "",
+    "SchoolName": "Morell",
+    "NumberOfStudents": 41,
+    "AverageScore": 69,
+    "MetExpectations": 56,
+    "AssessmentYear": "2013"
+  },
+  {
+    "AssessmentType": "",
+    "SchoolType": "Morell",
+    "ClassName": "",
+    "SchoolName": "Morell",
+    "NumberOfStudents": 32,
+    "AverageScore": 66,
+    "MetExpectations": 59,
+    "AssessmentYear": "2014"
+  },
+  {
+    "AssessmentType": "",
+    "SchoolType": "Morell",
+    "ClassName": "",
+    "SchoolName": "Morell",
+    "NumberOfStudents": 36,
+    "AverageScore": 69,
+    "MetExpectations": 61,
+    "AssessmentYear": "2015"
+  },
+  {
+    "AssessmentType": "Math",
+    "SchoolType": "Secondary",
+    "ClassName": "521A",
+    "SchoolName": "Morell",
+    "NumberOfStudents": 16,
+    "AverageScore": 56,
+    "MetExpectations": 69,
+    "AssessmentYear": "2015"
+  },
+  {
+    "AssessmentType": "Math",
+    "SchoolType": "Secondary",
+    "ClassName": "521B",
+    "SchoolName": "Morell",
+    "NumberOfStudents": 15,
+    "AverageScore": 62,
+    "MetExpectations": 73,
+    "AssessmentYear": "2015"
+  },
+  {
+    "AssessmentType": "Stewart",
+    "SchoolType": "Mt.",
+    "ClassName": "",
+    "SchoolName": "Mt. Stewart",
+    "NumberOfStudents": 22,
+    "AverageScore": 56,
+    "MetExpectations": 41,
+    "AssessmentYear": "2013"
+  },
+  {
+    "AssessmentType": "Stewart",
+    "SchoolType": "Mt.",
+    "ClassName": "",
+    "SchoolName": "Mt. Stewart",
+    "NumberOfStudents": 8,
+    "AverageScore": 0,
+    "MetExpectations": 0,
+    "AssessmentYear": "2014"
+  },
+  {
+    "AssessmentType": "Stewart",
+    "SchoolType": "Mt.",
+    "ClassName": "",
+    "SchoolName": "Mt. Stewart",
+    "NumberOfStudents": 10,
+    "AverageScore": 0,
+    "MetExpectations": 0,
+    "AssessmentYear": "2015"
+  },
+  {
+    "AssessmentType": "19",
+    "SchoolType": "O'Leary",
+    "ClassName": "",
+    "SchoolName": "O'Leary",
+    "NumberOfStudents": 24,
+    "AverageScore": 45,
+    "MetExpectations": 21,
+    "AssessmentYear": "2013"
+  },
+  {
+    "AssessmentType": "19",
+    "SchoolType": "O'Leary",
+    "ClassName": "",
+    "SchoolName": "O'Leary",
+    "NumberOfStudents": 24,
+    "AverageScore": 56,
+    "MetExpectations": 42,
+    "AssessmentYear": "2014"
+  },
+  {
+    "AssessmentType": "19",
+    "SchoolType": "O'Leary",
+    "ClassName": "",
+    "SchoolName": "O'Leary",
+    "NumberOfStudents": 17,
+    "AverageScore": 59,
+    "MetExpectations": 59,
+    "AssessmentYear": "2015"
+  },
+  {
+    "AssessmentType": "17",
+    "SchoolType": "Parkdale",
+    "ClassName": "",
+    "SchoolName": "Parkdale",
+    "NumberOfStudents": 18,
+    "AverageScore": 63,
+    "MetExpectations": 67,
+    "AssessmentYear": "2013"
+  },
+  {
+    "AssessmentType": "17",
+    "SchoolType": "Parkdale",
+    "ClassName": "",
+    "SchoolName": "Parkdale",
+    "NumberOfStudents": 10,
+    "AverageScore": 0,
+    "MetExpectations": 0,
+    "AssessmentYear": "2014"
+  },
+  {
+    "AssessmentType": "17",
+    "SchoolType": "Parkdale",
+    "ClassName": "",
+    "SchoolName": "Parkdale",
+    "NumberOfStudents": 20,
+    "AverageScore": 72,
+    "MetExpectations": 80,
+    "AssessmentYear": "2015"
+  },
+  {
+    "AssessmentType": "53",
+    "SchoolType": "Parkside",
+    "ClassName": "",
+    "SchoolName": "Parkside",
+    "NumberOfStudents": 25,
+    "AverageScore": 55,
+    "MetExpectations": 48,
+    "AssessmentYear": "2013"
+  },
+  {
+    "AssessmentType": "53",
+    "SchoolType": "Parkside",
+    "ClassName": "",
+    "SchoolName": "Parkside",
+    "NumberOfStudents": 39,
+    "AverageScore": 66,
+    "MetExpectations": 62,
+    "AssessmentYear": "2014"
+  },
+  {
+    "AssessmentType": "53",
+    "SchoolType": "Parkside",
+    "ClassName": "",
+    "SchoolName": "Parkside",
+    "NumberOfStudents": 36,
+    "AverageScore": 65,
+    "MetExpectations": 64,
+    "AssessmentYear": "2015"
+  },
+  {
+    "AssessmentType": "Street",
+    "SchoolType": "Prince",
+    "ClassName": "",
+    "SchoolName": "Prince Street",
+    "NumberOfStudents": 24,
+    "AverageScore": 65,
+    "MetExpectations": 63,
+    "AssessmentYear": "2013"
+  },
+  {
+    "AssessmentType": "Street",
+    "SchoolType": "Prince",
+    "ClassName": "",
+    "SchoolName": "Prince Street",
+    "NumberOfStudents": 28,
+    "AverageScore": 73,
+    "MetExpectations": 71,
+    "AssessmentYear": "2014"
+  },
+  {
+    "AssessmentType": "Street",
+    "SchoolType": "Prince",
+    "ClassName": "",
+    "SchoolName": "Prince Street",
+    "NumberOfStudents": 24,
+    "AverageScore": 77,
+    "MetExpectations": 75,
+    "AssessmentYear": "2015"
+  },
+  {
+    "AssessmentType": "Elizabeth",
+    "SchoolType": "Queen",
+    "ClassName": "",
+    "SchoolName": "Queen Elizabeth",
+    "NumberOfStudents": 46,
+    "AverageScore": 65,
+    "MetExpectations": 61,
+    "AssessmentYear": "2013"
+  },
+  {
+    "AssessmentType": "Elizabeth",
+    "SchoolType": "Queen",
+    "ClassName": "",
+    "SchoolName": "Queen Elizabeth",
+    "NumberOfStudents": 39,
+    "AverageScore": 69,
+    "MetExpectations": 67,
+    "AssessmentYear": "2014"
+  },
+  {
+    "AssessmentType": "Elizabeth",
+    "SchoolType": "Queen",
+    "ClassName": "",
+    "SchoolName": "Queen Elizabeth",
+    "NumberOfStudents": 45,
+    "AverageScore": 70,
+    "MetExpectations": 71,
+    "AssessmentYear": "2015"
+  },
+  {
+    "AssessmentType": "99",
+    "SchoolType": "Sherwood",
+    "ClassName": "",
+    "SchoolName": "Sherwood",
+    "NumberOfStudents": 78,
+    "AverageScore": 64,
+    "MetExpectations": 60,
+    "AssessmentYear": "2013"
+  },
+  {
+    "AssessmentType": "99",
+    "SchoolType": "Sherwood",
+    "ClassName": "",
+    "SchoolName": "Sherwood",
+    "NumberOfStudents": 56,
+    "AverageScore": 66,
+    "MetExpectations": 63,
+    "AssessmentYear": "2014"
+  },
+  {
+    "AssessmentType": "99",
+    "SchoolType": "Sherwood",
+    "ClassName": "",
+    "SchoolName": "Sherwood",
+    "NumberOfStudents": 83,
+    "AverageScore": 69,
+    "MetExpectations": 70,
+    "AssessmentYear": "2015"
+  },
+  {
+    "AssessmentType": "27",
+    "SchoolType": "Somerset",
+    "ClassName": "",
+    "SchoolName": "Somerset",
+    "NumberOfStudents": 15,
+    "AverageScore": 74,
+    "MetExpectations": 93,
+    "AssessmentYear": "2013"
+  },
+  {
+    "AssessmentType": "27",
+    "SchoolType": "Somerset",
+    "ClassName": "",
+    "SchoolName": "Somerset",
+    "NumberOfStudents": 23,
+    "AverageScore": 65,
+    "MetExpectations": 65,
+    "AssessmentYear": "2014"
+  },
+  {
+    "AssessmentType": "27",
+    "SchoolType": "Somerset",
+    "ClassName": "",
+    "SchoolName": "Somerset",
+    "NumberOfStudents": 17,
+    "AverageScore": 74,
+    "MetExpectations": 76,
+    "AssessmentYear": "2015"
+  },
+  {
+    "AssessmentType": "Regional",
+    "SchoolType": "Souris",
+    "ClassName": "",
+    "SchoolName": "Souris Regional",
+    "NumberOfStudents": 44,
+    "AverageScore": 64,
+    "MetExpectations": 50,
+    "AssessmentYear": "2013"
+  },
+  {
+    "AssessmentType": "Regional",
+    "SchoolType": "Souris",
+    "ClassName": "",
+    "SchoolName": "Souris Regional",
+    "NumberOfStudents": 38,
+    "AverageScore": 76,
+    "MetExpectations": 76,
+    "AssessmentYear": "2014"
+  },
+  {
+    "AssessmentType": "Regional",
+    "SchoolType": "Souris",
+    "ClassName": "",
+    "SchoolName": "Souris Regional",
+    "NumberOfStudents": 34,
+    "AverageScore": 68,
+    "MetExpectations": 62,
+    "AssessmentYear": "2015"
+  },
+  {
+    "AssessmentType": "Math",
+    "SchoolType": "Secondary",
+    "ClassName": "521A",
+    "SchoolName": "Souris Regional",
+    "NumberOfStudents": 15,
+    "AverageScore": 55,
+    "MetExpectations": 80,
+    "AssessmentYear": "2015"
+  },
+  {
+    "AssessmentType": "Math",
+    "SchoolType": "Secondary",
+    "ClassName": "521B",
+    "SchoolName": "Souris Regional",
+    "NumberOfStudents": 14,
+    "AverageScore": 41,
+    "MetExpectations": 29,
+    "AssessmentYear": "2015"
+  },
+  {
+    "AssessmentType": "Kings",
+    "SchoolType": "Southern",
+    "ClassName": "",
+    "SchoolName": "Southern Kings",
+    "NumberOfStudents": 21,
+    "AverageScore": 60,
+    "MetExpectations": 52,
+    "AssessmentYear": "2013"
+  },
+  {
+    "AssessmentType": "Kings",
+    "SchoolType": "Southern",
+    "ClassName": "",
+    "SchoolName": "Southern Kings",
+    "NumberOfStudents": 22,
+    "AverageScore": 70,
+    "MetExpectations": 64,
+    "AssessmentYear": "2014"
+  },
+  {
+    "AssessmentType": "Kings",
+    "SchoolType": "Southern",
+    "ClassName": "",
+    "SchoolName": "Southern Kings",
+    "NumberOfStudents": 22,
+    "AverageScore": 74,
+    "MetExpectations": 68,
+    "AssessmentYear": "2015"
+  },
+  {
+    "AssessmentType": "Park",
+    "SchoolType": "Spring",
+    "ClassName": "",
+    "SchoolName": "Spring Park",
+    "NumberOfStudents": 36,
+    "AverageScore": 63,
+    "MetExpectations": 53,
+    "AssessmentYear": "2013"
+  },
+  {
+    "AssessmentType": "Park",
+    "SchoolType": "Spring",
+    "ClassName": "",
+    "SchoolName": "Spring Park",
+    "NumberOfStudents": 49,
+    "AverageScore": 74,
+    "MetExpectations": 84,
+    "AssessmentYear": "2014"
+  },
+  {
+    "AssessmentType": "Park",
+    "SchoolType": "Spring",
+    "ClassName": "",
+    "SchoolName": "Spring Park",
+    "NumberOfStudents": 62,
+    "AverageScore": 76,
+    "MetExpectations": 87,
+    "AssessmentYear": "2015"
+  },
+  {
+    "AssessmentType": "Jean",
+    "SchoolType": "St.",
+    "ClassName": "",
+    "SchoolName": "St. Jean",
+    "NumberOfStudents": 15,
+    "AverageScore": 60,
+    "MetExpectations": 67,
+    "AssessmentYear": "2013"
+  },
+  {
+    "AssessmentType": "Jean",
+    "SchoolType": "St.",
+    "ClassName": "",
+    "SchoolName": "St. Jean",
+    "NumberOfStudents": 13,
+    "AverageScore": 73,
+    "MetExpectations": 85,
+    "AssessmentYear": "2014"
+  },
+  {
+    "AssessmentType": "Jean",
+    "SchoolType": "St.",
+    "ClassName": "",
+    "SchoolName": "St. Jean",
+    "NumberOfStudents": 7,
+    "AverageScore": 0,
+    "MetExpectations": 0,
+    "AssessmentYear": "2015"
+  },
+  {
+    "AssessmentType": "Louis",
+    "SchoolType": "St.",
+    "ClassName": "",
+    "SchoolName": "St. Louis",
+    "NumberOfStudents": 20,
+    "AverageScore": 73,
+    "MetExpectations": 80,
+    "AssessmentYear": "2013"
+  },
+  {
+    "AssessmentType": "Louis",
+    "SchoolType": "St.",
+    "ClassName": "",
+    "SchoolName": "St. Louis",
+    "NumberOfStudents": 20,
+    "AverageScore": 59,
+    "MetExpectations": 45,
+    "AssessmentYear": "2014"
+  },
+  {
+    "AssessmentType": "Louis",
+    "SchoolType": "St.",
+    "ClassName": "",
+    "SchoolName": "St. Louis",
+    "NumberOfStudents": 24,
+    "AverageScore": 62,
+    "MetExpectations": 54,
+    "AssessmentYear": "2015"
+  },
+  {
+    "AssessmentType": "31",
+    "SchoolType": "Stratford",
+    "ClassName": "",
+    "SchoolName": "Stratford",
+    "NumberOfStudents": 109,
+    "AverageScore": 68,
+    "MetExpectations": 73,
+    "AssessmentYear": "2013"
+  },
+  {
+    "AssessmentType": "31",
+    "SchoolType": "Stratford",
+    "ClassName": "",
+    "SchoolName": "Stratford",
+    "NumberOfStudents": 119,
+    "AverageScore": 72,
+    "MetExpectations": 76,
+    "AssessmentYear": "2014"
+  },
+  {
+    "AssessmentType": "31",
+    "SchoolType": "Stratford",
+    "ClassName": "",
+    "SchoolName": "Stratford",
+    "NumberOfStudents": 136,
+    "AverageScore": 78,
+    "MetExpectations": 88,
+    "AssessmentYear": "2015"
+  },
+  {
+    "AssessmentType": "",
+    "SchoolType": "Summerside",
+    "ClassName": "",
+    "SchoolName": "Summerside",
+    "NumberOfStudents": 139,
+    "AverageScore": 70,
+    "MetExpectations": 65,
+    "AssessmentYear": "2013"
+  },
+  {
+    "AssessmentType": "",
+    "SchoolType": "Summerside",
+    "ClassName": "",
+    "SchoolName": "Summerside",
+    "NumberOfStudents": 145,
+    "AverageScore": 72,
+    "MetExpectations": 72,
+    "AssessmentYear": "2014"
+  },
+  {
+    "AssessmentType": "",
+    "SchoolType": "Summerside",
+    "ClassName": "",
+    "SchoolName": "Summerside",
+    "NumberOfStudents": 144,
+    "AverageScore": 77,
+    "MetExpectations": 73,
+    "AssessmentYear": "2015"
+  },
+  {
+    "AssessmentType": "Math",
+    "SchoolType": "Secondary",
+    "ClassName": "521A",
+    "SchoolName": "Three Oaks",
+    "NumberOfStudents": 97,
+    "AverageScore": 60,
+    "MetExpectations": 71,
+    "AssessmentYear": "2015"
+  },
+  {
+    "AssessmentType": "Math",
+    "SchoolType": "Secondary",
+    "ClassName": "521B",
+    "SchoolName": "Three Oaks",
+    "NumberOfStudents": 71,
+    "AverageScore": 54,
+    "MetExpectations": 62,
+    "AssessmentYear": "2015"
+  },
+  {
+    "AssessmentType": "38",
+    "SchoolType": "Tignish",
+    "ClassName": "",
+    "SchoolName": "Tignish",
+    "NumberOfStudents": 42,
+    "AverageScore": 60,
+    "MetExpectations": 48,
+    "AssessmentYear": "2013"
+  },
+  {
+    "AssessmentType": "38",
+    "SchoolType": "Tignish",
+    "ClassName": "",
+    "SchoolName": "Tignish",
+    "NumberOfStudents": 37,
+    "AverageScore": 72,
+    "MetExpectations": 70,
+    "AssessmentYear": "2014"
+  },
+  {
+    "AssessmentType": "38",
+    "SchoolType": "Tignish",
+    "ClassName": "",
+    "SchoolName": "Tignish",
+    "NumberOfStudents": 38,
+    "AverageScore": 81,
+    "MetExpectations": 89,
+    "AssessmentYear": "2015"
+  },
+  {
+    "AssessmentType": "River",
+    "SchoolType": "Vernon",
+    "ClassName": "",
+    "SchoolName": "Vernon River",
+    "NumberOfStudents": 16,
+    "AverageScore": 80,
+    "MetExpectations": 81,
+    "AssessmentYear": "2013"
+  },
+  {
+    "AssessmentType": "River",
+    "SchoolType": "Vernon",
+    "ClassName": "",
+    "SchoolName": "Vernon River",
+    "NumberOfStudents": 7,
+    "AverageScore": 0,
+    "MetExpectations": 0,
+    "AssessmentYear": "2014"
+  },
+  {
+    "AssessmentType": "River",
+    "SchoolType": "Vernon",
+    "ClassName": "",
+    "SchoolName": "Vernon River",
+    "NumberOfStudents": 10,
+    "AverageScore": 0,
+    "MetExpectations": 0,
+    "AssessmentYear": "2015"
+  },
+  {
+    "AssessmentType": "Kent",
+    "SchoolType": "West",
+    "ClassName": "",
+    "SchoolName": "West Kent",
+    "NumberOfStudents": 26,
+    "AverageScore": 70,
+    "MetExpectations": 77,
+    "AssessmentYear": "2013"
+  },
+  {
+    "AssessmentType": "Kent",
+    "SchoolType": "West",
+    "ClassName": "",
+    "SchoolName": "West Kent",
+    "NumberOfStudents": 49,
+    "AverageScore": 73,
+    "MetExpectations": 76,
+    "AssessmentYear": "2014"
+  },
+  {
+    "AssessmentType": "Kent",
+    "SchoolType": "West",
+    "ClassName": "",
+    "SchoolName": "West Kent",
+    "NumberOfStudents": 30,
+    "AverageScore": 83,
+    "MetExpectations": 97,
+    "AssessmentYear": "2015"
+  },
+  {
+    "AssessmentType": "Royalty",
+    "SchoolType": "West",
+    "ClassName": "",
+    "SchoolName": "West Royalty",
+    "NumberOfStudents": 56,
+    "AverageScore": 70,
+    "MetExpectations": 73,
+    "AssessmentYear": "2013"
+  },
+  {
+    "AssessmentType": "Royalty",
+    "SchoolType": "West",
+    "ClassName": "",
+    "SchoolName": "West Royalty",
+    "NumberOfStudents": 67,
+    "AverageScore": 72,
+    "MetExpectations": 76,
+    "AssessmentYear": "2014"
+  },
+  {
+    "AssessmentType": "Royalty",
+    "SchoolType": "West",
+    "ClassName": "",
+    "SchoolName": "West Royalty",
+    "NumberOfStudents": 63,
+    "AverageScore": 70,
+    "MetExpectations": 68,
+    "AssessmentYear": "2015"
+  },
+  {
+    "AssessmentType": "Math",
+    "SchoolType": "Secondary",
+    "ClassName": "521A",
+    "SchoolName": "Westisle",
+    "NumberOfStudents": 62,
+    "AverageScore": 49,
+    "MetExpectations": 42,
+    "AssessmentYear": "2015"
+  },
+  {
+    "AssessmentType": "Math",
+    "SchoolType": "Secondary",
+    "ClassName": "521B",
+    "SchoolName": "Westisle",
+    "NumberOfStudents": 63,
+    "AverageScore": 55,
+    "MetExpectations": 65,
+    "AssessmentYear": "2015"
+  },
+  {
+    "AssessmentType": "",
+    "SchoolType": "Westwood",
+    "ClassName": "",
+    "SchoolName": "Westwood",
+    "NumberOfStudents": 149,
+    "AverageScore": 75,
+    "MetExpectations": 64,
+    "AssessmentYear": "2013"
+  },
+  {
+    "AssessmentType": "",
+    "SchoolType": "Westwood",
+    "ClassName": "",
+    "SchoolName": "Westwood",
+    "NumberOfStudents": 125,
+    "AverageScore": 73,
+    "MetExpectations": 56,
+    "AssessmentYear": "2014"
+  },
+  {
+    "AssessmentType": "",
+    "SchoolType": "Westwood",
+    "ClassName": "",
+    "SchoolName": "Westwood",
+    "NumberOfStudents": 149,
+    "AverageScore": 75,
+    "MetExpectations": 57,
+    "AssessmentYear": "2015"
+  }
+]
+15,Alberton,,Alberton,20,45,20,2013
+15,Alberton,,Alberton,29,66,76,2014
+15,Alberton,,Alberton,13,68,62,2015
+Cove,Amherst,,Amherst Cove,11,63,64,2013
+Cove,Amherst,,Amherst Cove,10,0,0,2014
+Cove,Amherst,,Amherst Cove,19,72,79,2015
+40,Athena,,Athena,26,71,69,2013
+40,Athena,,Athena,46,70,65,2014
+40,Athena,,Athena,34,83,85,2015
+11,Belfast,,Belfast,17,70,53,2013
+11,Belfast,,Belfast,14,73,86,2014
+11,Belfast,,Belfast,9,0,0,2015
+55,Birchwood,,Birchwood,59,61,46,2013
+55,Birchwood,,Birchwood,42,64,48,2014
+55,Birchwood,,Birchwood,66,65,48,2015
+23,Bloomfield,,Bloomfield,18,50,28,2013
+23,Bloomfield,,Bloomfield,34,48,21,2014
+23,Bloomfield,,Bloomfield,22,44,14,2015
+Math,Secondary,521A,Bluefield,95,58,68,2015
+Math,Secondary,521B,Bluefield,93,58,67,2015
+16,Cardigan,,Cardigan,10,0,0,2013
+16,Cardigan,,Cardigan,21,74,95,2014
+16,Cardigan,,Cardigan,14,76,93,2015
+Queens,Central,,Central Queens,25,64,64,2013
+Queens,Central,,Central Queens,31,60,52,2014
+Queens,Central,,Central Queens,30,68,77,2015
+Math,Secondary,521A,Charlottetown Rural,91,54,57,2015
+Math,Secondary,521B,Charlottetown Rural,117,60,69,2015
+Math,Secondary,521A,Colonel Gray,89,54,58,2015
+Math,Secondary,521B,Colonel Gray,117,67,82,2015
+,Donagh,,Donagh,14,70,71,2013
+,Donagh,,Donagh,16,80,81,2014
+,Donagh,,Donagh,24,82,88,2015
+Wiltshire,East,,East Wiltshire,168,71,60,2013
+Wiltshire,East,,East Wiltshire,166,70,68,2014
+Wiltshire,East,,East Wiltshire,172,73,69,2015
+River,Eliot,,Eliot River,124,51,31,2013
+River,Eliot,,Eliot River,139,69,65,2014
+River,Eliot,,Eliot River,155,72,78,2015
+38,Ellerslie,,Ellerslie,20,81,100,2013
+38,Ellerslie,,Ellerslie,27,86,100,2014
+38,Ellerslie,,Ellerslie,32,75,84,2015
+Street,Elm,,Elm Street,52,59,46,2013
+Street,Elm,,Elm Street,52,65,69,2014
+Street,Elm,,Elm Street,57,65,61,2015
+16,Englewood,,Englewood,14,69,64,2013
+16,Englewood,,Englewood,18,75,78,2014
+16,Englewood,,Englewood,18,72,67,2015
+10,Georgetown,,Georgetown,13,54,38,2013
+10,Georgetown,,Georgetown,6,0,0,2014
+10,Georgetown,,Georgetown,6,0,0,2015
+Stewart,Glen,,Glen Stewart,130,74,58,2013
+Stewart,Glen,,Glen Stewart,137,74,64,2014
+Stewart,Glen,,Glen Stewart,153,76,61,2015
+56,Greenfield,,Greenfield,48,67,60,2013
+56,Greenfield,,Greenfield,46,73,80,2014
+56,Greenfield,,Greenfield,58,77,81,2015
+Shore,Gulf,,Gulf Shore,21,72,76,2013
+Shore,Gulf,,Gulf Shore,22,74,77,2014
+Shore,Gulf,,Gulf Shore,13,86,85,2015
+91,Hernewood,,Hernewood,90,67,53,2013
+91,Hernewood,,Hernewood,75,63,53,2014
+91,Hernewood,,Hernewood,70,71,63,2015
+,Kensington,,Kensington,52,74,69,2013
+,Kensington,,Kensington,37,80,84,2014
+,Kensington,,Kensington,42,71,69,2015
+Math,Secondary,521A,Kensington,20,53,50,2015
+Math,Secondary,521B,Kensington,22,51,46,2015
+,Kinkora,,Kinkora,31,73,71,2013
+,Kinkora,,Kinkora,31,75,81,2014
+,Kinkora,,Kinkora,25,75,80,2015
+Math,Secondary,521A,Kinkora,14,55,64,2015
+Math,Secondary,521B,Kinkora,11,68,73,2015
+Literacy,Primary,- English Language Program,L. M. Montgomery,56,88,84,2013
+Literacy,Primary,- English Language Program,L. M. Montgomery,47,85,81,2014
+Literacy,Primary,- English Language Program,L. M. Montgomery,46,80,80,2015
+Literacy,Elementary,- English Language Program,L. M. Montgomery,39,80,87,2013
+Literacy,Elementary,- English Language Program,L. M. Montgomery,49,73,92,2014
+Literacy,Elementary,- English Language Program,L. M. Montgomery,63,70,87,2015
+Math,Primary,,L.  M. Montgomery,56,71,55,2013
+Math,Primary,,L.  M. Montgomery,49,71,53,2014
+Math,Primary,,L.  M. Montgomery,47,73,53,2015
+Math,Elementary,,L.  M. Montgomery,39,60,51,2013
+Math,Elementary,,L.  M. Montgomery,50,71,74,2014
+Math,Elementary,,L.  M. Montgomery,63,71,76,2015
+E.,M.,,M. E. Callaghan,71,70,58,2013
+E.,M.,,M. E. Callaghan,63,73,70,2014
+E.,M.,,M. E. Callaghan,71,74,68,2015
+25,Miscouche,,Miscouche,22,76,68,2013
+25,Miscouche,,Miscouche,26,63,50,2014
+25,Miscouche,,Miscouche,17,81,76,2015
+,Montague,,Montague,54,63,63,2013
+,Montague,,Montague,60,64,65,2014
+,Montague,,Montague,54,68,67,2015
+Math,Secondary,521A,Montague,73,53,58,2015
+Math,Secondary,521B,Montague,52,80,94,2015
+,Morell,,Morell,25,74,68,2013
+,Morell,,Morell,20,69,75,2014
+,Morell,,Morell,22,67,64,2015
+,Morell,,Morell,41,69,56,2013
+,Morell,,Morell,32,66,59,2014
+,Morell,,Morell,36,69,61,2015
+Math,Secondary,521A,Morell,16,56,69,2015
+Math,Secondary,521B,Morell,15,62,73,2015
+Stewart,Mt.,,Mt. Stewart,22,56,41,2013
+Stewart,Mt.,,Mt. Stewart,8,0,0,2014
+Stewart,Mt.,,Mt. Stewart,10,0,0,2015
+19,O'Leary,,O'Leary,24,45,21,2013
+19,O'Leary,,O'Leary,24,56,42,2014
+19,O'Leary,,O'Leary,17,59,59,2015
+17,Parkdale,,Parkdale,18,63,67,2013
+17,Parkdale,,Parkdale,10,0,0,2014
+17,Parkdale,,Parkdale,20,72,80,2015
+53,Parkside,,Parkside,25,55,48,2013
+53,Parkside,,Parkside,39,66,62,2014
+53,Parkside,,Parkside,36,65,64,2015
+Street,Prince,,Prince Street,24,65,63,2013
+Street,Prince,,Prince Street,28,73,71,2014
+Street,Prince,,Prince Street,24,77,75,2015
+Elizabeth,Queen,,Queen Elizabeth,46,65,61,2013
+Elizabeth,Queen,,Queen Elizabeth,39,69,67,2014
+Elizabeth,Queen,,Queen Elizabeth,45,70,71,2015
+99,Sherwood,,Sherwood,78,64,60,2013
+99,Sherwood,,Sherwood,56,66,63,2014
+99,Sherwood,,Sherwood,83,69,70,2015
+27,Somerset,,Somerset,15,74,93,2013
+27,Somerset,,Somerset,23,65,65,2014
+27,Somerset,,Somerset,17,74,76,2015
+Regional,Souris,,Souris Regional,44,64,50,2013
+Regional,Souris,,Souris Regional,38,76,76,2014
+Regional,Souris,,Souris Regional,34,68,62,2015
+Math,Secondary,521A,Souris Regional,15,55,80,2015
+Math,Secondary,521B,Souris Regional,14,41,29,2015
+Kings,Southern,,Southern Kings,21,60,52,2013
+Kings,Southern,,Southern Kings,22,70,64,2014
+Kings,Southern,,Southern Kings,22,74,68,2015
+Park,Spring,,Spring Park,36,63,53,2013
+Park,Spring,,Spring Park,49,74,84,2014
+Park,Spring,,Spring Park,62,76,87,2015
+Jean,St.,,St. Jean,15,60,67,2013
+Jean,St.,,St. Jean,13,73,85,2014
+Jean,St.,,St. Jean,7,0,0,2015
+Louis,St.,,St. Louis,20,73,80,2013
+Louis,St.,,St. Louis,20,59,45,2014
+Louis,St.,,St. Louis,24,62,54,2015
+31,Stratford,,Stratford,109,68,73,2013
+31,Stratford,,Stratford,119,72,76,2014
+31,Stratford,,Stratford,136,78,88,2015
+,Summerside,,Summerside,139,70,65,2013
+,Summerside,,Summerside,145,72,72,2014
+,Summerside,,Summerside,144,77,73,2015
+Math,Secondary,521A,Three Oaks,97,60,71,2015
+Math,Secondary,521B,Three Oaks,71,54,62,2015
+38,Tignish,,Tignish,42,60,48,2013
+38,Tignish,,Tignish,37,72,70,2014
+38,Tignish,,Tignish,38,81,89,2015
+River,Vernon,,Vernon River,16,80,81,2013
+River,Vernon,,Vernon River,7,0,0,2014
+River,Vernon,,Vernon River,10,0,0,2015
+Kent,West,,West Kent,26,70,77,2013
+Kent,West,,West Kent,49,73,76,2014
+Kent,West,,West Kent,30,83,97,2015
+Royalty,West,,West Royalty,56,70,73,2013
+Royalty,West,,West Royalty,67,72,76,2014
+Royalty,West,,West Royalty,63,70,68,2015
+Math,Secondary,521A,Westisle,62,49,42,2015
+Math,Secondary,521B,Westisle,63,55,65,2015
+,Westwood,,Westwood,149,75,64,2013
+,Westwood,,Westwood,125,73,56,2014
+,Westwood,,Westwood,149,75,57,2015

@@ -1,8 +1,11 @@
-﻿using iTextSharp.text.pdf;
+﻿using FileHelpers;
+using iTextSharp.text.pdf;
 using iTextSharp.text.pdf.parser;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
+using System.Configuration;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -13,18 +16,39 @@ namespace SchoolPdf
     {
         static void Main(string[] args)
         {
-            var simple = "http://www.gov.pe.ca/eecd/assessments/Bluefield-High.pdf";
-            var complex = "http://www.gov.pe.ca/eecd/assessments/Ecole%20La-Belle-Cloche%202012_2014_CSLF_English.pdf";
-            Uri uri = new Uri(complex);
-            PdfReader reader = new PdfReader(uri);
+            //var simple = "http://www.gov.pe.ca/eecd/assessments/Bluefield-High.pdf";
+            //var complex = "http://www.gov.pe.ca/eecd/assessments/Ecole%20La-Belle-Cloche%202012_2014_CSLF_English.pdf";
 
-            String text = PdfTextExtractor.GetTextFromPage(reader, 1);
+            List<SchoolTestResult> result = new List<SchoolTestResult>();
+            string[] urls = ConfigurationManager.AppSettings["urls"].Split(',');
 
-            //List<SchoolTestResult> result = AssessmentReader.parse(text);
-            //string output = JsonConvert.SerializeObject(result, Formatting.Indented);
-            //Console.WriteLine(output);
+            Console.WriteLine("Reading " + urls.Length + " files");
 
-            Console.WriteLine(text);
+            foreach (string url in urls)
+            {
+                Uri uri = new Uri(url);
+                PdfReader reader = new PdfReader(uri);
+
+                try
+                {
+                    String text = PdfTextExtractor.GetTextFromPage(reader, 1);
+                    result.AddRange(new AssessmentReader().parse(text));
+                }
+                catch (Exception e)
+                {
+                    Console.WriteLine("Error Reading " + url);
+                    Console.WriteLine(e);
+                }
+            }
+            
+            string jsonOutput = JsonConvert.SerializeObject(result, Formatting.Indented);
+            string csvOutput = new FileHelperEngine<SchoolTestResult>().WriteString( result );
+
+            Console.WriteLine(jsonOutput);
+            Console.WriteLine(csvOutput);
+
+
+            //Console.WriteLine(text);
             Console.ReadLine();
         }
     }

@@ -66,6 +66,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Examples\ExamplePDF.txt" />
+    <Content Include="Examples\FirstRunResults.txt" />
     <Content Include="Examples\Sources.txt" />
     <Content Include="Examples\SingleAssessmentMultipleYear.txt" />
     <Content Include="Examples\SingleAssessmentSingleYearMultipleClasses.txt" />

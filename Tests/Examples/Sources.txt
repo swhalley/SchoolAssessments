@@ -19,7 +19,8 @@
 
 <select onchange="MM_jumpMenu('parent',this,0)" name="elsb">
     
-    <option selected="selected" value="../eecd/assessments/Alberton-Elementary.pdf">Alberton Elementary</option><option value="../eecd/assessments/Amherst-Cove-Consolidated.pdf">Amherst Cove Consolidated</option>
+    <option selected="selected" value="../eecd/assessments/Alberton-Elementary.pdf">Alberton Elementary</option>
+	<option value="../eecd/assessments/Amherst-Cove-Consolidated.pdf">Amherst Cove Consolidated</option>
     <option value="../eecd/assessments/Athena-Consolidated.pdf">Athena Consolidated</option>
     <option value="../eecd/assessments/Belfast-Consolidated.pdf">Belfast Consolidated</option>
     <option value="../eecd/assessments/Birchwood-Intermediate.pdf">Birchwood Intermediate</option>

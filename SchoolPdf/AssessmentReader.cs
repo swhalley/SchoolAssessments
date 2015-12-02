@@ -55,6 +55,7 @@ namespace SchoolPdf
             return text.Split(new string[] { "\r\n", "\n" }, StringSplitOptions.None)
                 .Select(x => x.Trim())
                 .Where(x => !x.StartsWith("*") && !x.EndsWith("*") && !String.IsNullOrWhiteSpace(x))
+                .Where(x => !x.Equals("Assessments based on each unique curriculum; therefore, results from these programs cannot be compared."))
                 .ToList();
         }
 

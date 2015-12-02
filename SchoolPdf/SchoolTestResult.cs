@@ -1,13 +1,14 @@
-﻿using System;
+﻿using FileHelpers;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
 namespace SchoolPdf
 {
+    [DelimitedRecord(",")]
     public class SchoolTestResult
     {
-
         public String AssessmentType { get; set; }
 
         public String SchoolType { get; set; }
