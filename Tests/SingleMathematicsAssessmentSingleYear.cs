@@ -23,7 +23,7 @@ ELSB 572 55 61
         [TestMethod]
         public void CanReadTheSchoolName()
         {
-            List<SchoolTestResult> result = AssessmentReader.parse(text);
+            List<SchoolTestResult> result = new AssessmentReader().parse(text);
 
             Assert.AreEqual("Bluefield", result[0].SchoolName);
         }
@@ -31,7 +31,7 @@ ELSB 572 55 61
         [TestMethod]
         public void CanReadAssessmentType()
         {
-            List<SchoolTestResult> result = AssessmentReader.parse(text);
+            List<SchoolTestResult> result = new AssessmentReader().parse(text);
 
             Assert.AreEqual("Math", result[0].AssessmentType);
         }
@@ -39,7 +39,7 @@ ELSB 572 55 61
         [TestMethod]
         public void CanReadNumberOfStudents()
         {
-            List<SchoolTestResult> result = AssessmentReader.parse(text);
+            List<SchoolTestResult> result = new AssessmentReader().parse(text);
 
             Assert.AreEqual(95, result[0].NumberOfStudents);
         }
@@ -47,7 +47,7 @@ ELSB 572 55 61
         [TestMethod]
         public void CanReadAverageScore()
         {
-            List<SchoolTestResult> result = AssessmentReader.parse(text);
+            List<SchoolTestResult> result = new AssessmentReader().parse(text);
 
             Assert.AreEqual(58, result[0].AverageScore);
         }
@@ -55,7 +55,7 @@ ELSB 572 55 61
         [TestMethod]
         public void CanReadPassPercentage()
         {
-            List<SchoolTestResult> result = AssessmentReader.parse(text);
+            List<SchoolTestResult> result = new AssessmentReader().parse(text);
 
             Assert.AreEqual(68, result[0].PercentagePassed);
         }
@@ -63,21 +63,21 @@ ELSB 572 55 61
         [TestMethod]
         public void CanReadSchoolType()
         {
-            List<SchoolTestResult> result = AssessmentReader.parse(text);
+            List<SchoolTestResult> result = new AssessmentReader().parse(text);
             Assert.AreEqual("Secondary", result[0].SchoolType);
         }
         
         [TestMethod]
         public void CanReadClassName()
         {
-            List<SchoolTestResult> result = AssessmentReader.parse(text);
+            List<SchoolTestResult> result = new AssessmentReader().parse(text);
             Assert.AreEqual("521A", result[0].ClassName);
         }
 
         [TestMethod]
         public void CanReadAssessmentYear()
         {
-            List<SchoolTestResult> result = AssessmentReader.parse(text);
+            List<SchoolTestResult> result = new AssessmentReader().parse(text);
             Assert.AreEqual("2015", result[0].AssessmentYear);
         }
 

@@ -9,31 +9,45 @@ namespace SchoolPdf
 {
     public class AssessmentReader
     {
-        public static List<SchoolTestResult> parse(String text)
+        private string scoresPattern = @"([0-9]+|\-{2})"; //Matches any number or double dash (--)
+        private string schoolNamePattern =
+                "^"             //Match from beginning of the string
+                + ".*?"         //Any character, zero or more times
+                + @"(?=\d+)";   //Until a number is hit
+
+        public List<SchoolTestResult> parse(String text)
         {
             var result = new List<SchoolTestResult>();
 
             List<string> lines = ExtractLinesFromTextAndCleanItUp(text);
 
-            while (lines.Count > 0 )
+            while (lines.Count > 0)
             {
-                var assessment = new SchoolTestResult();
                 List<string> record = new List<string>();
 
-                ParseClassInformation(assessment, lines);
-                int recordSize = (assessment.AssessmentType == "Math") ? 6 : 8;
-                
-                record = ExtractSingleRecord(lines, recordSize);
-                ParseSchoolTestResults(assessment, record, recordSize);
-                result.Add(assessment);
+                string assessmentType = getAssessmentType(lines);
+                int recordSize = (assessmentType == "Math") ? 6 : 8;
 
-                lines.RemoveRange(0, record.Count);
+                record = ExtractSingleRecord(lines, recordSize);
+
+                int assessmentYears = getNumberOfAssessmentYears(record, recordSize);
+
+                for (int yearIndex = 1; yearIndex <= assessmentYears; yearIndex++)
+                {
+                    var assessment = new SchoolTestResult();
+                    ParseClassInformation(assessment, lines);
+                    ParseSchoolName(assessment, record, recordSize);
+                    ParseTestScores(assessment, record, recordSize, yearIndex);
+                    result.Add(assessment);
+                }
+
+                lines.RemoveRange(0, recordSize);
             }
 
             return result;
         }
 
-        private static List<string> ExtractLinesFromTextAndCleanItUp(String text)
+        private List<string> ExtractLinesFromTextAndCleanItUp(String text)
         {
             return text.Split(new string[] { "\r\n", "\n" }, StringSplitOptions.None)
                 .Select(x => x.Trim())
@@ -41,7 +55,22 @@ namespace SchoolPdf
                 .ToList();
         }
 
-        private static void ParseClassInformation(SchoolTestResult assessment, List<string> record)
+        private string getAssessmentType(List<string> lines)
+        {
+            return lines[0].Split(' ')[1];
+        }
+
+        private int getNumberOfAssessmentYears(List<string> record, int recordLineSize)
+        {
+            return (Regex.Matches(record[recordLineSize - 2], scoresPattern).Count) / 3;
+        }
+
+        private List<string> ExtractSingleRecord(List<string> lines, int recordLineSize)
+        {
+            return lines.Take(recordLineSize).ToList();
+        }
+
+        private void ParseClassInformation(SchoolTestResult assessment, List<string> record)
         {
             string[] classInformation = record[0].Split(' ');
 
@@ -50,26 +79,16 @@ namespace SchoolPdf
             assessment.ClassName = classInformation[classInformation.Length - 1];
         }
 
-        private static List<string> ExtractSingleRecord(List<string> lines, int recordLineSize)
+        private void ParseSchoolName(SchoolTestResult assessment, List<string> record, int recordLineSize)
         {
-            return lines.Take(recordLineSize).ToList();
-        }
-
-        private static void ParseSchoolTestResults(SchoolTestResult assessment, List<string> record, int recordLineSize)
-        {
-            string schoolNamePattern = 
-                "^"             //Match from beginning of the string
-                + ".*?"         //Any character, zero or more times
-                + @"(?=\d+)";   //Until a number is hit
-
-            string scoresPattern = @"([0-9]+|\-{2})"; //Matches any number or double dash (--)
-
-
             Regex regex = new Regex(schoolNamePattern);
-            Match match = regex.Match( record[recordLineSize-2] );
+            Match match = regex.Match(record[recordLineSize - 2]);
 
             assessment.SchoolName = match.Value.Trim();
+        }
 
+        private void ParseTestScores(SchoolTestResult assessment, List<string> record, int recordLineSize, int yearOffset)
+        {
             MatchCollection scores = Regex.Matches(record[recordLineSize - 2], scoresPattern);
 
             assessment.NumberOfStudents = Int32.Parse(scores[0].Value);
@@ -81,7 +100,9 @@ namespace SchoolPdf
             Int32.TryParse(scores[2].Value, out number);
             assessment.PercentagePassed = number;
 
-            string[] testYear = record[recordLineSize-3].Split(' ');
+
+
+            string[] testYear = record[recordLineSize - 3].Split(' ');
             assessment.AssessmentYear = testYear[0];
         }
     }

@@ -21,7 +21,7 @@ CSLF 61 73 68
 
 *To protect the privacy of students, results of schools with ten or fewer students are not reported publically.";
 
-            Assert.AreEqual("École La-Belle-Cloche", AssessmentReader.parse(text)[0].SchoolName);
+            Assert.AreEqual("École La-Belle-Cloche", new AssessmentReader().parse(text)[0].SchoolName);
 
         }
 
@@ -39,7 +39,7 @@ CSLF 61 73 68
 
 *To protect the privacy of students, results of schools with ten or fewer students are not reported publically.";
 
-            Assert.AreEqual(0, AssessmentReader.parse(text)[0].AverageScore);
+            Assert.AreEqual(0, new AssessmentReader().parse(text)[0].AverageScore);
 
         }
 
@@ -58,7 +58,7 @@ CSLF 61 73 68
 
 *To protect the privacy of students, results of schools with ten or fewer students are not reported publically.";
 
-            Assert.AreEqual(0, AssessmentReader.parse(text)[0].PercentagePassed);
+            Assert.AreEqual(0, new AssessmentReader().parse(text)[0].PercentagePassed);
 
         }
     }

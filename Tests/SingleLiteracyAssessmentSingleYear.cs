@@ -22,7 +22,7 @@ CSLF 72 83 51";
         [TestMethod]
         public void ReturnsAListOfObjects()
         {
-            List<SchoolTestResult> result = AssessmentReader.parse(text);
+            List<SchoolTestResult> result = new AssessmentReader().parse(text);
 
             Assert.AreEqual(1, result.Count);
         }
@@ -31,7 +31,7 @@ CSLF 72 83 51";
         [TestMethod]
         public void CanReadTheSchoolName()
         {
-            List<SchoolTestResult> result = AssessmentReader.parse(text);
+            List<SchoolTestResult> result = new AssessmentReader().parse(text);
 
             Assert.AreEqual("École La-Belle-Cloche", result[0].SchoolName);
         }
@@ -39,7 +39,7 @@ CSLF 72 83 51";
         [TestMethod]
         public void CanReadAssessmentType()
         {
-            List<SchoolTestResult> result = AssessmentReader.parse(text);
+            List<SchoolTestResult> result = new AssessmentReader().parse(text);
 
             Assert.AreEqual("Literacy", result[0].AssessmentType);
         }
@@ -47,7 +47,7 @@ CSLF 72 83 51";
         [TestMethod]
         public void CanReadNumberOfStudents()
         {
-            List<SchoolTestResult> result = AssessmentReader.parse(text);
+            List<SchoolTestResult> result = new AssessmentReader().parse(text);
 
             Assert.AreEqual(4, result[0].NumberOfStudents);
         }
@@ -55,7 +55,7 @@ CSLF 72 83 51";
         [TestMethod]
         public void CanReadAverageScore()
         {
-            List<SchoolTestResult> result = AssessmentReader.parse(text);
+            List<SchoolTestResult> result = new AssessmentReader().parse(text);
 
             Assert.AreEqual(90, result[0].AverageScore);
         }
@@ -63,7 +63,7 @@ CSLF 72 83 51";
         [TestMethod]
         public void CanReadPassPercentage()
         {
-            List<SchoolTestResult> result = AssessmentReader.parse(text);
+            List<SchoolTestResult> result = new AssessmentReader().parse(text);
 
             Assert.AreEqual(78, result[0].PercentagePassed);
         }
@@ -71,7 +71,7 @@ CSLF 72 83 51";
         [TestMethod]
         public void CanReadSchoolType()
         {
-            List<SchoolTestResult> result = AssessmentReader.parse(text);
+            List<SchoolTestResult> result = new AssessmentReader().parse(text);
             Assert.AreEqual("Elementary", result[0].SchoolType);
         }
 
@@ -85,7 +85,7 @@ CSLF 72 83 51";
         [TestMethod]
         public void CanReadAssessmentYear()
         {
-            List<SchoolTestResult> result = AssessmentReader.parse(text);
+            List<SchoolTestResult> result = new AssessmentReader().parse(text);
             Assert.AreEqual("2014", result[0].AssessmentYear);
         }
 

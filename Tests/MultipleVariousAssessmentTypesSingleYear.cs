@@ -33,7 +33,7 @@ CSLF 72 83 51
         [TestMethod]
         public void ReturnsTwoRecords()
         {
-            List<SchoolTestResult> result = AssessmentReader.parse(data);
+            List<SchoolTestResult> result = new AssessmentReader().parse(data);
 
             Assert.AreEqual(2, result.Count);
         }
@@ -41,7 +41,7 @@ CSLF 72 83 51
         [TestMethod]
         public void CanReadTheSchoolName()
         {
-            List<SchoolTestResult> result = AssessmentReader.parse(data);
+            List<SchoolTestResult> result = new AssessmentReader().parse(data);
 
             Assert.AreEqual("Bluefield", result[0].SchoolName);
             Assert.AreEqual("École La-Belle-Cloche", result[1].SchoolName);
@@ -50,7 +50,7 @@ CSLF 72 83 51
         [TestMethod]
         public void CanReadAssessmentType()
         {
-            List<SchoolTestResult> result = AssessmentReader.parse(data);
+            List<SchoolTestResult> result = new AssessmentReader().parse(data);
 
             Assert.AreEqual("Math", result[0].AssessmentType);
             Assert.AreEqual("Literacy", result[1].AssessmentType);
@@ -60,7 +60,7 @@ CSLF 72 83 51
         [TestMethod]
         public void CanReadNumberOfStudents()
         {
-            List<SchoolTestResult> result = AssessmentReader.parse(data);
+            List<SchoolTestResult> result = new AssessmentReader().parse(data);
 
             Assert.AreEqual(95, result[0].NumberOfStudents);
             Assert.AreEqual(4, result[1].NumberOfStudents);
@@ -70,7 +70,7 @@ CSLF 72 83 51
         [TestMethod]
         public void CanReadAverageScore()
         {
-            List<SchoolTestResult> result = AssessmentReader.parse(data);
+            List<SchoolTestResult> result = new AssessmentReader().parse(data);
 
             Assert.AreEqual(58, result[0].AverageScore);
             Assert.AreEqual(90, result[1].AverageScore);
@@ -79,7 +79,7 @@ CSLF 72 83 51
         [TestMethod]
         public void CanReadPassPercentage()
         {
-            List<SchoolTestResult> result = AssessmentReader.parse(data);
+            List<SchoolTestResult> result = new AssessmentReader().parse(data);
 
             Assert.AreEqual(68, result[0].PercentagePassed);
             Assert.AreEqual(78, result[1].PercentagePassed);
@@ -89,7 +89,7 @@ CSLF 72 83 51
         [TestMethod]
         public void CanReadSchoolType()
         {
-            List<SchoolTestResult> result = AssessmentReader.parse(data);
+            List<SchoolTestResult> result = new AssessmentReader().parse(data);
             Assert.AreEqual("Secondary", result[0].SchoolType);
             Assert.AreEqual("Elementary", result[1].SchoolType);
         }
@@ -97,7 +97,7 @@ CSLF 72 83 51
         [TestMethod]
         public void CanReadClassName()
         {
-            List<SchoolTestResult> result = AssessmentReader.parse(data);
+            List<SchoolTestResult> result = new AssessmentReader().parse(data);
             Assert.AreEqual("521A", result[0].ClassName);
             //Not checking Elementary school because it isn't listed
         }

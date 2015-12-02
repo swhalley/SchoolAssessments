@@ -33,7 +33,7 @@ CSLF 61 73 68 81 82 78 80 89 73
         [TestMethod]
         public void ReadsTwoYears()
         {
-            List<SchoolTestResult> result = AssessmentReader.parse(twoYears);
+            List<SchoolTestResult> result = new AssessmentReader().parse(twoYears);
 
             Assert.AreEqual(2, result.Count);
 
